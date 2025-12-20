@@ -1034,24 +1034,9 @@
             }
         }
         
-        // Service Worker registration
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('./service-worker.js')
-                .then(registration => {
-                    console.log('Service Worker registered:', registration);
-                })
-                .catch(error => {
-                    console.error('Service Worker registration failed:', error);
-                });
-
-            navigator.serviceWorker.register('./OneSignalSDKWorker.js')
-                .then(registration => {
-                    console.log('OneSignal SW registered:', registration);
-                })
-                .catch(error => {
-                    console.error('OneSignal SW registration failed:', error);
-                });
-        } else {
+        // Service Worker registration - Handled by OneSignal.init() automatically
+        // OneSignal will register OneSignalSDKWorker.js which now includes PWA caching
+        if (!('serviceWorker' in navigator)) {
             console.log('Browser tidak mendukung Service Worker');
         }
         
