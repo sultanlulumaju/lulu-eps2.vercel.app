@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        charset="UTF-8">
+    <title>SultanLulu - Game Online Official Indonesia</title>
+    <meta name="description"
+        content="Platform gaming resmi Indonesia dengan permainan terbaik, bonus menarik, dan keamanan terpercaya. Bergabunglah dengan jutaan pemain!" />
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="./assets/css/all.min.css" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" type="text/css">
+    <link rel="preload" href="./assets/css/Open24DisplaySt.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./assets/css/Teko-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/css/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css"
+        type="text/css">
+    <link rel="shortcut icon" href="./assets/img/dXWE0JfPeGe6yhov.png" type="image/x-icon">
+    <link rel="manifest" href="manifest.json" />
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+    <meta name="theme-color" content="#000000" />
+
+    <style>
+        @font-face {
+            font-family: Open24DisplaySt;
+            src: url(assets/css/Open24DisplaySt.woff2);
+        }
+
+        @font-face {
+            font-family: Teko-SemiBold;
+            src: url(assets/css/Teko-SemiBold.ttf);
+        }
+
+        @font-face {
+            font-family: Poppins-Regular;
+            src: url(assets/css/Poppins-Regular.ttf);
+        }
+
+        body {
+            margin: 0 auto;
+            color: #fff;
+        }
+
+        .form-control {
+            background-color: #2F211D;
+            border-color: #707070;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            color: #fff;
+        }
+
+        #right-column.active {
+            right: 0;
+            visibility: visible;
+        }
+
+        #right-column {
+            overflow: auto;
+        }
+
+        #right-column {
+            width: 60%;
+            visibility: hidden;
+            height: 100%;
+            background-color: #201E21;
+            position: fixed;
+            top: 0;
+            z-index: 1049;
+            transition: all 0.5s;
+            right: -500px;
+            text-transform: capitalize;
+            font-size: 14px;
+        }
+
+        .closebtn {
+            color: #fff;
+            position: absolute;
+            top: 0;
+            right: 9px;
+            padding: 1px 5px;
+            z-index: 3;
+            font-size: 33px;
+        }
+
+        .overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .show {
+            display: block !important;
+        }
+
+        .overlay {
+            position: fixed;
+            opacity: 0;
+            visibility: hidden;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 21;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            transition-timing-function: ease;
+        }
+
+        .active-menu-scroll {
+            position: sticky;
+            top: 50px;
+            background-color: #000;
+            z-index: 1;
+        }
+
+        #progressive_jackpot {
+            font-family: Open24DisplaySt;
+            font-size: 32px;
+            margin: auto auto auto 0;
+        }
+
+        .main-menu-outer-container {
+            display: flex;
+            z-index: 3;
+        }
+
+        .main-menu-outer-container>i {
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 0 3px;
+            top: 0
+        }
+
+        .main-menu-outer-container>main {
+            margin: 0;
+            display: flex;
+            overflow: auto;
+        }
+
+        .main-menu-outer-container>main>a:first-child {
+            margin-left: auto
+        }
+
+        .main-menu-outer-container>main>a:last-child {
+            margin-right: auto
+        }
+
+        .main-menu-outer-container>main>a {
+            display: block;
+            white-space: nowrap;
+            padding: 10px 0;
+            font-size: 11px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff
+        }
+
+        .main-menu-outer-container>main>div:first-child {
+            margin-left: auto
+        }
+
+        .main-menu-outer-container>main>div:last-child {
+            margin-right: auto
+        }
+
+        .main-menu-outer-container>main>div {
+            display: block;
+            white-space: nowrap;
+            padding: 10px 0;
+            font-size: 11px;
+            text-align: center;
+            color: #fff
+        }
+
+        .main-menu-outer-container>main>a>img {
+            display: block;
+            width: 25px;
+            margin: 10px auto
+        }
+
+        .hot-games-bounce {
+            animation-name: hot-games-bounce;
+            animation-timing-function: ease;
+        }
+
+        @keyframes hot-games-bounce {
+            0% {
+                transform: scale(1, 1) translateY(0);
+            }
+
+            10% {
+                transform: scale(1.1, .9) translateY(0);
+            }
+
+            30% {
+                transform: scale(.9, 1.1) translateY(-2px);
+            }
+
+            50% {
+                transform: scale(1, 1) translateY(0);
+            }
+
+            100% {
+                transform: scale(1, 1) translateY(0);
+            }
+        }
+
+        @property --angle {
+            syntax: '<angle>';
+            initial-value: 90deg;
+            inherits: true;
+        }
+
+        @property --gradX {
+            syntax: '<percentage>';
+            initial-value: 50%;
+            inherits: true;
+        }
+
+        @property --gradY {
+            syntax: '<percentage>';
+            initial-value: 0%;
+            inherits: true;
+        }
+
+        :root {
+            --d: 2500ms;
+            --angle: 90deg;
+            --gradX: 100%;
+            --gradY: 50%;
+            --c1: rgba(255, 255, 255, 1);
+            --c2: rgba(255, 255, 255, 0.1);
+        }
+
+        .glowing {
+            border: 0.35rem solid;
+            border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+            animation: borderRotate var(--d) linear infinite forwards;
+        }
+
+        .glowing:nth-child(2) {
+            border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+            animation: borderRadial var(--d) linear infinite forwards;
+        }
+
+        @keyframes borderRotate {
+            100% {
+                --angle: 420deg;
+            }
+        }
+
+        @keyframes borderRadial {
+            20% {
+                --gradX: 100%;
+                --gradY: 50%;
+            }
+
+            40% {
+                --gradX: 100%;
+                --gradY: 100%;
+            }
+
+            60% {
+                --gradX: 50%;
+                --gradY: 100%;
+            }
+
+            80% {
+                --gradX: 0%;
+                --gradY: 50%;
+            }
+
+            100% {
+                --gradX: 50%;
+                --gradY: 0%;
+            }
+        }
+
+        .glowing2 {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glowing2:before {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100%;
+            background-image: linear-gradient(120deg,
+                    rgba(255, 255, 255, 0) 30%,
+                    rgba(255, 255, 255, .8),
+                    rgba(255, 255, 255, 0) 70%);
+            top: 0;
+            left: -100px;
+            animation: shine 3s infinite linear;
+            /* Animation */
+        }
+
+        @keyframes shine {
+            0% {
+                left: -100px
+            }
+
+            20% {
+                left: 100%
+            }
+
+            100% {
+                left: 100%
+            }
+        }
+    </style>
+    <script src="/jquery-old.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body style="background-color: #000;">
+    <div class="overlay"></div>
+    <div
+        style="height: 50px; position: fixed; top: 0; z-index: 20; background-color: #201E21; width: 100%; box-shadow: rgb(0 0 0 / 50%) 0 6px 6px -6px;">
+        <table width="90%" style="margin: 0 auto;">
+            <tbody>
+                <tr style="display: flex; height: 50px;">
+                    <td style="width: 80px;">
+                        <a href="/index.html">
+                            <img src="./assets/img/XLcKkSGsXDbITBPr.gif"
+                                alt="SULTANLULU" style="height: 50px;">
+                        </a>
+                    </td>
+
+                    <td id="open-right" style="margin: auto 0 auto auto;">
+                        <img src="./assets/img/menu.png" alt="side menu"
+                            style="width: 26px;">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div style="margin-top: 50px;">
+        <div style="padding: 20px 0; background-color: #000;">
+            <div
+                style="width: 90%; margin: 0 auto 10px auto; color: transparent !important; -webkit-background-clip: text; background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #e99c05 0%, #f4ae00 8%, #f8bf33 25%, #f8ce19 62.5%, #ffdc02 100%); font-family: Teko-SemiBold; text-align: center; font-size: 24px;">
+                HUBUNGI KAMI
+            </div>
+
+            <div style="background-color: #201E21; padding: 0 5% 10px 5%;">
+                <div onclick="window.open('https://direct.lc.chat/19217124/', '_blank')"
+                    style="font-weight: 500; padding: 10px 0; border-bottom: 1px solid #8891AE; cursor: pointer;">
+                    <div
+                        style="color: transparent !important; -webkit-background-clip: text; background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #e99c05 0%, #f4ae00 8%, #f8bf33 25%, #f8ce19 62.5%, #ffdc02 100%); margin-bottom: 10px;">
+                        LiveChat
+                    </div>
+
+                    <div style="font-size: 12px;">
+                        https://direct.lc.chat/19217124/
+                    </div>
+                </div>
+                <div onclick="window.open('https://api.whatsapp.com/send?phone=6285959176119', '_blank')"
+                    style="font-weight: 500; padding: 10px 0; border-bottom: 1px solid #8891AE; cursor: pointer;">
+                    <div
+                        style="color: transparent !important; -webkit-background-clip: text; background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #e99c05 0%, #f4ae00 8%, #f8bf33 25%, #f8ce19 62.5%, #ffdc02 100%); margin-bottom: 10px;">
+                        Whatsapp
+                    </div>
+
+                    <div style="font-size: 12px;">
+                        https://api.whatsapp.com/send?phone=6285959176119
+                    </div>
+                </div>
+                <div onclick="window.open('https://www.facebook.com/profile.php?id=61577800449970', '_blank')"
+                    style="font-weight: 500; padding: 10px 0; border-bottom: 1px solid #8891AE; cursor: pointer;">
+                    <div
+                        style="color: transparent !important; -webkit-background-clip: text; background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #e99c05 0%, #f4ae00 8%, #f8bf33 25%, #f8ce19 62.5%, #ffdc02 100%); margin-bottom: 10px;">
+                        Facebook
+                    </div>
+
+                    <div style="font-size: 12px;">
+                        https://www.facebook.com/profile.php?id=61577800449970
+                    </div>
+                </div>
+                <div onclick="window.open('https://t.me/Sultanlulu88', '_blank')"
+                    style="font-weight: 500; padding: 10px 0; border-bottom: 1px solid #8891AE; cursor: pointer;">
+                    <div
+                        style="color: transparent !important; -webkit-background-clip: text; background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #e99c05 0%, #f4ae00 8%, #f8bf33 25%, #f8ce19 62.5%, #ffdc02 100%); margin-bottom: 10px;">
+                        Telegram
+                    </div>
+
+                    <div style="font-size: 12px;">
+                        https://t.me/Sultanlulu88
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bg"
+            style="background:url(assets/img/footer-mobile.jpg); position: relative; background-size: 100% auto; width: 100%; background-repeat: repeat; background-position: top; padding: 20px 0; color: #fff;">
+            <div style="margin-left: 15px; position: relative; z-index: 2;">
+                Bekerja sama dengan BANK :
+
+                <ul
+                    style="list-style-type: none; padding: 15px 0 0 0; margin-bottom: 30px; display: flex; flex-wrap: wrap; text-align: center;">
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/VahK6oop7qhgeCuc.png"
+                                alt="BCA" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/Zawv1ETDe1MiBN1v.png"
+                                alt="BNI" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/k4EGb86Wy3xRseCd.png"
+                                alt="BRI" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/kvN6HVotOvAMRzJk.png"
+                                alt="CIMB" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/kOhTvpgAcK7PMiNR.png"
+                                alt="Mandiri" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/KQ9ioPngRVBhfjaH.png"
+                                alt="Danamon" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/vqbAoeN3q4GEbtQz.png"
+                                alt="OVO" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/G56oYQ3hpmUHJBgP.png"
+                                alt="GOPAY" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/4t5RvgC7uiRGNcZq.png"
+                                alt="DANA" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/I10CIHwGhNcxSY0N.png"
+                                alt="LINKAJA" style="width: 70%;">
+                        </div>
+                    </li>
+                </ul>
+
+                Bekerja sama dengan PROVIDER :
+
+                <ul
+                    style="list-style-type: none; padding: 15px 0 0 0; margin-bottom: 30px; display: flex; flex-wrap: wrap; text-align: center;">
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/hP4uaW1j9K2AlyVv.png"
+                                alt="Pragmatic" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/w9D4o4hXE6Ffxkct.png"
+                                alt="Pg Soft" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/Qn9ydbba5HAHVpqt.png"
+                                alt="Joker" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/STgyifWgfxZX8Xdd.png"
+                                alt="Habanero" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/7NyF4s7qBEfZdzYv.png"
+                                alt="Spade Gaming" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/4qvaCEyPoRKnSoRK.png"
+                                alt="Play&#039;n Go" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/qVj2pc4tq5jNTETa.png"
+                                alt="JiLi" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/2bxUoiMZiTUWITao.png"
+                                alt="Naga" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/oRI9UH3PqlrVdkrc.png"
+                                alt="CQ9" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/hU7lEGuKZbz9OLTP.png"
+                                alt="SA Gaming" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/ApAdJUPi82CnZTCY.png"
+                                alt="Saba" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/TIHHJatZGX0j0E7O.png"
+                                alt="Sbobet" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/PCIJfHBobXU23DYh.png"
+                                alt="Evo Gaming" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/z3JBuC9gdC8YRGi5.png"
+                                alt="Red Tiger" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/qKNOBHGMC3Wg7dUY.png"
+                                alt="NetEnt" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/kFdpl9SeA38NdO7f.png"
+                                alt="BTG" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/8txgJayRQEb6bL12.png"
+                                alt="Cock Fighting" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/BOPxvOvQoOweFna3.png"
+                                alt="WM" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/EpMjjKkesBhNT5lI.png"
+                                alt="YeeBet" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/gmmomXzsKnwrcfOJ.png"
+                                alt="Sexy Gaming" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/YMB5vRqv4ay7ACM5.png"
+                                alt="Pinnacle" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/YpMisNvksbUZnl9M.png"
+                                alt="UG Gaming" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/OxRGZisxBcqAj8eM.png"
+                                alt="No Limit City" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/TS5Hs0Er3bKNf1Gm.png"
+                                alt="AG Gaming" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/YhxpfaUCngU9U9zA.png"
+                                alt="WM Slot" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/p7g9ot1imVr9V8ei.png"
+                                alt="CMD" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/wbqQE1MyfQYM6gIG.png"
+                                alt="WE" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/4Q4HAv8VBYlUHAjZ.png"
+                                alt="FaChai" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/3TxQyknwmOKq4aUq.png"
+                                alt="Rich88" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/NQLOXaCrM298SxMK.png"
+                                alt="MicroGaming" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/lvQoNDpqIVWb0zas.png"
+                                alt="Fast Spin" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/fnDYskKRsM11p1Uf.png"
+                                alt="PlayTech" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/ECNzxNfUvkFm4fci.png"
+                                alt="Besoft" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/DPmzuCH2rQlEDfqa.png"
+                                alt="Yggdrasil" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/gQsHrMWuWIn6Jkwd.png"
+                                alt="Relax" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/PcM0ND3RJmzOwkyM.png"
+                                alt="Hacksaw" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/JMWGAwRJouC2hmH6.png"
+                                alt="GG Soft" style="width: 70%;">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <footer>
+                <div style="width: 100%; padding: 0 15px; position: relative; z-index: 2;">
+                    <h1 class="whitespace-normal break-words"><strong>Selamat datang di <em>SultanLulu</em> - Platform
+                            Gaming Online Official Indonesia!</strong></h1>
+                    <p class="whitespace-normal break-words">Nikmati pengalaman gaming terdepan di
+                        <strong>SultanLulu</strong>, destinasi utama para pecinta permainan online di Indonesia. Sebagai
+                        platform gaming resmi dan terpercaya, kami menghadirkan berbagai macam permainan menarik yang
+                        siap memberikan Anda hiburan berkualitas tinggi setiap harinya.</p>
+                    <h2 class="whitespace-normal break-words"><strong><em>Mengapa Memilih SultanLulu?</em></strong></h2>
+                    <p class="whitespace-normal break-words">Dengan teknologi canggih dan <em><strong>sistem keamanan
+                                berlapis</strong></em>, SultanLulu menjamin pengalaman bermain yang <em>aman, nyaman,
+                            dan menyenangkan</em>. Platform kami dilengkapi dengan <strong>interface
+                            user-friendly</strong> yang memudahkan navigasi, baik untuk pemula maupun pemain
+                        berpengalaman.</p>
+                    <h2 class="whitespace-normal break-words"><em><strong>Koleksi Permainan Terlengkap</strong></em>
+                    </h2>
+                    <p class="whitespace-normal break-words">Jelajahi beragam kategori permainan eksklusif yang tersedia
+                        24/7:</p>
+                    <ul
+                        class="[&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc space-y-1.5 pl-7">
+                        <li class="whitespace-normal break-words"><strong>Slot Games</strong> dengan <em>grafis
+                                memukau</em> dan <strong>fitur bonus menarik</strong></li>
+                        <li class="whitespace-normal break-words"><strong>Live Casino</strong> dengan dealer profesional
+                            real-time</li>
+                        <li class="whitespace-normal break-words"><strong>Sports Entertainment</strong> untuk penggemar
+                            olahraga</li>
+                        <li class="whitespace-normal break-words"><strong>Arcade Games</strong> yang <strong>seru dan
+                                menghibur</strong></li>
+                    </ul>
+                    <h2 class="whitespace-normal break-words"><strong><em>Keunggulan Platform Kami</em></strong></h2>
+                    <p class="whitespace-normal break-words">SultanLulu mengutamakan <em><strong>kenyamanan dan kepuasan
+                                member</strong></em> melalui:</p>
+                    <ul
+                        class="[&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc space-y-1.5 pl-7">
+                        <li class="whitespace-normal break-words">Layanan customer support <strong>24 jam
+                                non-stop</strong></li>
+                        <li class="whitespace-normal break-words"><em>Proses transaksi cepat dan aman</em></li>
+                        <li class="whitespace-normal break-words"><strong>Bonus dan promosi menarik</strong> setiap hari
+                        </li>
+                        <li class="whitespace-normal break-words"><strong>Aplikasi mobile</strong> yang responsif dan
+                            mudah digunakan</li>
+                    </ul>
+                    <p class="whitespace-normal break-words"><em><strong>Bergabunglah dengan Komunitas Gaming
+                                Terbaik!</strong></em></p>
+                    <p class="whitespace-normal break-words">Daftarkan diri Anda sekarang dan rasakan sensasi bermain di
+                        platform gaming <strong><em>paling terpercaya di Indonesia</em></strong>. Dengan <strong>ribuan
+                            member aktif</strong> dan <strong>sistem fair play</strong> yang terjamin, SultanLulu adalah
+                        pilihan tepat untuk mengisi waktu luang Anda.</p>
+                    <p class="whitespace-normal break-words"><em><strong>Mulai petualangan gaming Anda bersama
+                                SultanLulu - dimana setiap permainan adalah pengalaman yang tak
+                                terlupakan!</strong></em></p>
+                    <p class="whitespace-normal break-words"><strong>Ready to play? <em>Let's get started!</em></strong>
+                    </p>
+                </div>
+
+                <div
+                    style="font-weight: bold; color: #fff; text-align: center; padding: 35px 20px 70px 20px; position: relative; z-index: 2;">
+                    <h1 style="font-size: 15px; margin-top: 0;">©2025 SULTANLULU. All rights reserved | 18+</h1>
+                </div>
+            </footer>
+        </div>
+
+        <div id="right-column">
+            <div class="closebtn">×</div>
+            <div style="padding: 50px 20px 30px 20px; border-bottom: 2px solid #fff;">
+                <div>
+                    <!--<input type="hidden" name="_token" value="4yYaWomTahCxsTJKMJG6Yqb39LC3mUD8wMwVuRmL">-->
+                    <!--<div style="position: relative;">-->
+                    <!--    <img src="./assets/img/username.png" alt="username"-->
+                    <!--        style="position: absolute; top: 10px; left: 15px; height: 18px; width: 18px; margin: 0;">-->
+                    <!--    <input type="text" name="username" placeholder="Username"-->
+                    <!--        style="background-color: transparent; color: #fff; border: 1px solid #fff; width: 100%; border-radius: 5px; padding: 8px 15px 8px 40px; margin-bottom: 10px;">-->
+                    <!--</div>-->
+                    <!--<div style="position: relative;">-->
+                    <!--    <img src="./assets/img/password.png" alt="password"-->
+                    <!--        style="position: absolute; top: 10px; left: 15px; height: 18px; width: 18px; margin: 0;">-->
+                    <!--    <input type="password" name="password" placeholder="Password"-->
+                    <!--        style="background-color: transparent; color: #fff; border: 1px solid #fff; width: 100%; border-radius: 5px; padding: 8px 15px 8px 40px; margin-bottom: 10px;">-->
+                    <!--</div>-->
+                    <div style="display: flex; margin-top: 10px;">
+                    
+                        <a href="https://gatottech.io/luluapp"
+                            style="color: #fff; border: 1px solid #fff; border-radius: 20px; width: 50%; background-color: transparent; margin-right: 10px; padding: 3px 0; text-align: center;">
+                            MASUK
+                        </a>
+                        <a href="https://sultanlulugo.com/link/go?to=daftar" class="glowing2"
+                            style="color: #fff; border-radius: 20px; width: 50%; background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #e99c05 0%, #f4ae00 8%, #f8bf33 25%, #f8ce19 62.5%, #ffdc02 100%); text-align: center; padding: 4px 0;">
+                            DAFTAR
+                        </a>
+                    </div>
+                    </div>
+            </div>
+
+            <div style="padding: 20px 20px 0 20px;">
+                <a href="https://sultanlulugo.com/link/go?to=buku-mimpi" style="display: flex; color: #fff;">
+                    <img src="./assets/img/book-blue.png" alt="buku mimpi"
+                        style="width: 24px;">
+                    <div style="margin: auto 8px;">
+                        Buku Mimpi
+                    </div>
+                </a>
+            </div>
+
+            <div style="padding: 20px;">
+                <a href="https://sultanlulugo.com/link/go?to=ganti-mode" style="display: flex; color: #fff;">
+                    <img src="./assets/img/desktop.png" alt="desktop"
+                        style="width: 24px;">
+                    <div style="margin: auto 8px;">
+                        Versi Desktop
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div
+            style="background-color: #201E21; position: fixed; z-index: 5; bottom: 0; width: 100%; padding: 8px 0; box-shadow: rgb(0 0 0 / 50%) 0 -6px 6px -6px;">
+            <table width="100%" style="font-size: 12px;">
+                <tbody>
+                    <tr>
+                        <td style="text-align: center; width: 20%;">
+                            <a href="/index.html">
+                                <img src="./assets/img/menu-1.png" alt="home"
+                                    style="width: 27px;">
+                                <div style="color: #FFD700; margin-top: 2px;">Beranda</div>
+                            </a>
+                        </td>
+                        <td style="text-align: center; width: 20%;">
+                            <a href="https://sultanlulugo.com/link/go?to=rtp-live">
+                                <img src="./assets/img/menu-2.png" alt="rtp"
+                                    style="width: 27px;">
+                                <div style="color: #FFD700; margin-top: 2px;">RTP</div>
+                            </a>
+                        </td>
+                        <td style="text-align: center; width: 20%; position: relative;">
+                            <a href="https://gatottech.io/luluapp"
+                                style="position: absolute; transform: translate(50%, 0); right: 50%; bottom: 0;">
+                                <img src="./assets/img/menu-3.png" alt="masuk"
+                                    style="background-color: #000; width: 48px; border-radius: 50%;">
+                                <div style="color: #FFD700; margin-top: 2px;">Masuk</div>
+                            </a>
+                        </td>
+                        <td style="text-align: center; width: 20%;">
+                            <a href="promo.html">
+                                <img src="./assets/img/menu-4.png" alt="promo"
+                                    style="width: 27px;">
+                                <div style="color: #FFD700; margin-top: 2px;">Promo</div>
+                            </a>
+                        </td>
+                        <td style="text-align: center; width: 20%;">
+                            <a href="sosmed.html">
+                                <img src="./assets/img/menu-5.png" alt="chat"
+                                    style="width: 27px;">
+                                <div style="color: #FFD700; margin-top: 2px;">Hubungi</div>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="./assets/js/jquery.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <script src="./assets/js/custom.min.js"></script>
+        <script type="text/javascript">
+            $('#open-right').on('click', function () {
+                $("#right-column").toggleClass("active");
+                $("#right-column li").toggleClass("active");
+                $(".overlay").toggleClass("show");
+            });
+            $('.overlay').on('click', function () {
+                $("#right-column").removeClass("active");
+                $("#right-column li").removeClass("active");
+                $(".overlay").removeClass("show");
+            });
+            $('.closebtn').on('click', function () {
+                $("#right-column").removeClass("active");
+                $("#right-column li").removeClass("active");
+                $(".overlay").removeClass("show");
+            });
+            $('.close-modal').on('click', function () {
+                $(".modal-info").remove();
+                $(".modal-backdrop").remove();
+            });
+            $(window).scroll(function (event) {
+                var scroll = $(window).scrollTop();
+                var element_position = $('#main_menu_outer_container').offset().top - 50;
+
+                if (scroll >= element_position) {
+                    $('#main_menu_outer_container').addClass('active-menu-scroll');
+                }
+            });
+        </script>
+    </div>
+
+    <script>
+        let isSubscribed = false;
+        
+        // OneSignal initialization
+        window.OneSignalDeferred = window.OneSignalDeferred || [];
+        OneSignalDeferred.push(async function(OneSignal) {
+            try {
+                await OneSignal.init({
+                    appId: "a76bb7ba-91a1-4c7f-b3dc-681051f9abd1", // Cloudflare Page
+                    notifyButton: {
+                        enable: false
+                    },
+                    allowLocalhostAsSecureOrigin: true,
+                    serviceWorkerPath: "./OneSignalSDKWorker.js",
+                    serviceWorkerUpdaterPath: "./OneSignalSDKUpdaterWorker.js",
+                    welcomeNotification: {
+                        title: "Selamat Datang!",
+                        message: "Terima kasih telah mengaktifkan notifikasi"
+                    }
+                });
+                
+                console.log('OneSignal berhasil diinisialisasi');
+                
+                const isPushSupported = await OneSignal.Notifications.isPushSupported();
+                if (isPushSupported) {
+                    isSubscribed = await OneSignal.User.PushSubscription.optedIn;
+                    updateNotificationStatus();
+                }
+                
+                OneSignal.User.PushSubscription.addEventListener('change', function(event) {
+                    isSubscribed = event.current.optedIn;
+                    updateNotificationStatus();
+                });
+                
+            } catch (error) {
+                console.error('Error initializing OneSignal:', error);
+            }
+        });
+        
+        async function subscribeToOneSignal() {
+            try {
+                if (window.OneSignal) {
+                    const permission = await OneSignal.Notifications.requestPermission();
+                    if (permission) {
+                        console.log('Notifikasi berhasil diaktifkan');
+                        
+                        const playerId = await OneSignal.User.PushSubscription.id;
+                        if (playerId) {
+                            console.log(`Player ID: ${playerId}`);
+                        }
+                    } else {
+                        console.log('Pengguna menolak izin notifikasi');
+                    }
+                } else {
+                    console.log('OneSignal belum siap');
+                }
+            } catch (error) {
+                console.error('Error subscribing:', error);
+            }
+        }
+        
+        async function requestNotificationPermission() {
+            try {
+                if (!('Notification' in window)) {
+                    alert('Browser ini tidak mendukung notifikasi!');
+                    return;
+                }
+                
+                console.log('Meminta izin notifikasi browser...');
+                
+                const permission = await Notification.requestPermission();
+                
+                if (permission === 'granted') {
+                    console.log('Izin notifikasi browser berhasil diberikan');
+                    updateBrowserNotificationStatus();
+                    
+                    // Send test notification
+                    try {
+                        if ('serviceWorker' in navigator && navigator.serviceWorker.ready) {
+                            const registration = await navigator.serviceWorker.ready;
+                            await registration.showNotification('Permission Granted!', {
+                                body: 'Notifikasi browser sudah aktif. Sekarang Anda bisa menerima notifikasi.',
+                                icon: './icon-192.png',
+                                tag: 'permission-granted',
+                                data: { action: 'permission-test' }
+                            });
+                        } else {
+                            const testNotif = new Notification('Permission Granted!', {
+                                body: 'Notifikasi browser sudah aktif. Sekarang Anda bisa menerima notifikasi.',
+                                icon: './icon-192.png',
+                                tag: 'permission-granted'
+                            });
+                            setTimeout(() => testNotif.close(), 4000);
+                        }
+                    } catch (notifError) {
+                        console.warn('Test notification failed:', notifError);
+                    }
+                    
+                } else if (permission === 'denied') {
+                    console.log('Izin notifikasi ditolak oleh pengguna');
+                    alert('Notifikasi ditolak! Untuk mengaktifkan notifikasi:\n\n1. Klik ikon gembok/info di address bar\n2. Ubah setting notifikasi ke "Allow"\n3. Refresh halaman');
+                } else {
+                    console.log('Izin notifikasi diabaikan oleh pengguna');
+                }
+                
+                updateBrowserNotificationStatus();
+                
+            } catch (error) {
+                console.error('Error requesting permission:', error);
+            }
+        }
+        
+        function updateBrowserNotificationStatus() {
+            const permission = Notification.permission;
+            const requestBtn = document.getElementById('requestPermissionBtn');
+            
+            if (permission === 'granted') {
+                requestBtn.style.background = '#10b981';
+                requestBtn.textContent = 'Permission Granted';
+                requestBtn.disabled = true;
+            } else if (permission === 'denied') {
+                requestBtn.style.background = '#ef4444';
+                requestBtn.textContent = 'Permission Denied';
+            } else {
+                requestBtn.style.background = '#f59e0b';
+                requestBtn.textContent = 'Permission Notifikasi';
+            }
+        }
+        
+        function updateNotificationStatus() {
+            const subscribeBtn = document.getElementById('subscribeBtn');
+            
+            if (isSubscribed) {
+                subscribeBtn.textContent = 'Notifikasi Aktif ✓';
+                subscribeBtn.disabled = true;
+                subscribeBtn.style.background = '#10b981';
+            } else {
+                subscribeBtn.textContent = 'Subscribe Notifikasi';
+                subscribeBtn.disabled = false;
+                subscribeBtn.style.background = '#333';
+            }
+        }
+        
+        // Service Worker registration
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./service-worker.js')
+                .then(registration => {
+                    console.log('Service Worker registered:', registration);
+                })
+                .catch(error => {
+                    console.error('Service Worker registration failed:', error);
+                });
+
+            navigator.serviceWorker.register('./OneSignalSDKWorker.js')
+                .then(registration => {
+                    console.log('OneSignal SW registered:', registration);
+                })
+                .catch(error => {
+                    console.error('OneSignal SW registration failed:', error);
+                });
+        } else {
+            console.log('Browser tidak mendukung Service Worker');
+        }
+        
+        // Initialize status on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            updateBrowserNotificationStatus();
+            updateNotificationStatus();
+        });
+    </script>
+
+</body>
+
+</html>

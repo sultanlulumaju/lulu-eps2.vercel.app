@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Install APK Sultanlulu</title>
+    <link rel="icon" href="https://lulu-eps1.vercel.app/install/icon.png" />
+    <meta name="description" content="★★★★☆ - 827.172 Player telah install aplikasi ini.">
+    <meta name="theme-color" content="#4A90E2">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="APK Sultanlulu">
+
+    <meta property="al:android:package" content="com.android.chrome">
+    <meta property="al:web:should_fallback" content="true">
+    <meta property="og:url" content="https://lulu-eps1.vercel.app/install/index.html">
+
+    <link rel="manifest" href="../manifest.json">
+
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+    <meta name="facebook-domain-verification" content="b076hmokhovlelt87badxu733i933g" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Install APK Sultanlulu" />
+    <meta property="og:description" content="★★★★☆ - 827.172 Player telah install aplikasi ini." />
+    <meta property="og:site_name" content="Sultanlulu" />
+    <meta property="og:image" content="https://lulu-eps1.vercel.app/install/icon.png" />
+    <meta property="og:image:width" content="192" />
+    <meta property="og:image:height" content="192" />
+    <meta property="og:image:alt" content="Install APK Sultanlulu" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Install APK Sultanlulu" />
+    <meta name="twitter:description" content="★★★★☆ - 827.172 Player telah install aplikasi ini." />
+    <meta name="twitter:image" content="https://lulu-eps1.vercel.app/install/icon.png" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            color: #fff;
+            background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #000000);
+            overflow-x: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+
+        /* Loading state untuk auto-redirect */
+        .screen-load {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .loading-container {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #696969;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .loading-text {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .loading-subtext {
+            color: #999;
+            font-size: 14px;
+        }
+        
+        .text-tengah {
+            text-align: center;
+        }
+
+        /* Hidden by default - only show if redirect fails */
+        .manual-redirect {
+            display: none;
+            margin: 0 10px;
+        }
+
+        .manual-redirect.show {
+            display: block;
+        }
+
+        /* Hide content initially when auto-redirecting */
+        .content-wrapper {
+            display: none;
+        }
+
+        .content-wrapper.show {
+            display: block;
+        }
+
+        .warning {
+            background: #2d2d2d;
+            border: 1px solid #575757;
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .instructions {
+            background: #ffffff;
+            border: 1px solid #737373;
+            color: #474545;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .instructions ol {
+            /* margin-left: 20px; */
+        }
+
+        .instructions li {
+            margin: 5px 0;
+        }
+
+        .iconx {
+            width: 32px;
+            height: 32px;
+        }
+
+        .icon-info {
+            height: 20px;
+            width: 20px;
+        }
+
+        .gap-info {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .button-gagal {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .button-gagal:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+
+        .button-gagal.secondary {
+            background: #292929;
+            color: #b7b7b7;
+        }
+
+        .hilangkan {
+            display: none;
+        }
+
+        /* Container utama */
+        .container {
+            max-width: 28rem;
+            /* mirip max-w-md */
+            width: 100%;
+            padding: 1.5rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .logo {
+            width: 8rem;
+            height: 8rem;
+            margin: 1rem auto;
+            display: block;
+        }
+
+        h1 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #facc15;
+            margin-bottom: 1.5rem;
+        }
+
+        @media (min-width: 640px) {
+            h1 {
+                font-size: 2.25rem;
+            }
+        }
+
+        /* Tombol install */
+        #installBtn {
+            background: #2563eb;
+            color: #fff;
+            padding: 1rem 2rem;
+            border-radius: 9999px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            cursor: pointer;
+            border: none;
+            transition: transform 0.2s, box-shadow 0.3s;
+        }
+
+        #installBtn.btn-glow {
+            box-shadow: 0 0 10px #2563eb, 0 0 20px #2563eb, 0 0 30px #2563eb;
+        }
+
+        #installBtn.btn-glow:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #3b82f6, 0 0 30px #3b82f6, 0 0 45px #60a5fa;
+        }
+
+        /* Card Info */
+        .info-card {
+            background: rgba(17, 24, 39, 0.7);
+            /* bg-gray-900 bg-opacity-70 */
+            margin-top: 1.5rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+
+        /* Support Section */
+        .support {
+            margin-top: 2.5rem;
+        }
+
+        .support h2 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #facc15;
+            margin-bottom: 1rem;
+        }
+
+        .support-icons {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            font-size: 1.875rem;
+            color: #facc15;
+        }
+
+        .support-icons svg {
+            width: 2rem;
+            height: 2rem;
+            fill: white;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .support-icons svg:hover {
+            transform: scale(1.3);
+            /*box-shadow: 0 0 15px #fcd34d, 0 0 25px #fcd34d;*/
+        }
+
+        /* Footer */
+        footer {
+            font-size: 0.75rem;
+            color: #9ca3af;
+            margin-top: 2.5rem;
+        }
+
+        /* Partikel */
+        #particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(255, 215, 0, 0.5);
+            border-radius: 50%;
+            animation: move 10s linear infinite;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateY(0) translateX(0);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-800px) translateX(100px);
+                opacity: 0;
+            }
+        }
+    </style>
+    <script src="/jquery-old.min.js?v=1.0.0"></script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1519945832689129');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1519945832689129&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+
+<body>
+    
+    <!-- Loading state shown during auto-redirect -->
+    <div id="loadingContainer" class="screen-load">
+        <div class="loading-container">
+            <div class="spinner"></div>
+            <div class="loading-text">Membuka browser...</div>
+            <div class="loading-subtext">Anda akan dialihkan otomatis</div>
+        </div>
+    </div>
+
+    <!-- hidden initially, shown if redirect fails -->
+    <div id="manualRedirect" class="manual-redirect">
+        <div class="warning">
+            <div class="gap-info">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon-info">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+                </svg>
+                <strong>Auto-redirect gagal</strong>
+            </div>
+            <p>Silakan gunakan tombol di bawah untuk membuka di browser eksternal</p>
+        </div>
+
+        <div class="instructions">
+            <div class="gap-info">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon-info">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                </svg>
+                <strong>Cara Manual:</strong>
+            </div>
+            <ol>
+                <li>Tap ikon menu (⋮) di pojok atas</li>
+                <li>Pilih "Open in Browser" atau "Buka di Browser"</li>
+                <li>Atau gunakan tombol di bawah</li>
+            </ol>
+        </div>
+
+        <div class="button-group">
+            <button onclick="forceRedirectToChrome()" class="button-gagal">
+                <svg class="iconx" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                    viewBox="0 0 48 48">
+                    <path fill="#4caf50"
+                        d="M44,24c0,11.044-8.956,20-20,20S4,35.044,4,24S12.956,4,24,4S44,12.956,44,24z"></path>
+                    <path fill="#ffc107"
+                        d="M24,4v20l8,4l-8.843,16c0.317,0,0.526,0,0.843,0c11.053,0,20-8.947,20-20S35.053,4,24,4z">
+                    </path>
+                    <path fill="#4caf50"
+                        d="M44,24c0,11.044-8.956,20-20,20S4,35.044,4,24S12.956,4,24,4S44,12.956,44,24z"></path>
+                    <path fill="#ffc107"
+                        d="M24,4v20l8,4l-8.843,16c0.317,0,0.526,0,0.843,0c11.053,0,20-8.947,20-20S35.053,4,24,4z">
+                    </path>
+                    <path fill="#f44336"
+                        d="M41.84,15H24v13l-3-1L7.16,13.26H7.14C10.68,7.69,16.91,4,24,4C31.8,4,38.55,8.48,41.84,15z">
+                    </path>
+                    <path fill="#dd2c00" d="M7.158,13.264l8.843,14.862L21,27L7.158,13.264z"></path>
+                    <path fill="#558b2f" d="M23.157,44l8.934-16.059L28,25L23.157,44z"></path>
+                    <path fill="#f9a825" d="M41.865,15H24l-1.579,4.58L41.865,15z"></path>
+                    <path fill="#fff" d="M33,24c0,4.969-4.031,9-9,9s-9-4.031-9-9s4.031-9,9-9S33,19.031,33,24z">
+                    </path>
+                    <path fill="#2196f3" d="M31,24c0,3.867-3.133,7-7,7s-7-3.133-7-7s3.133-7,7-7S31,20.133,31,24z">
+                    </path>
+                </svg>
+                <span>Paksa Buka di Chrome</span>
+            </button>
+           
+            <button onclick="copyLink()" class="button-gagal secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="iconx">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.373-.03.748-.057 1.123-.08M15.75 18H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08M15.75 18.75v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5A3.375 3.375 0 0 0 6.375 7.5H5.25m11.9-3.664A2.251 2.251 0 0 0 15 2.25h-1.5a2.251 2.251 0 0 0-2.15 1.586m5.8 0c.065.21.1.433.1.664v.75h-6V4.5c0-.231.035-.454.1-.664M6.75 7.5H4.875c-.621 0-1.125.504-1.125 1.125v12c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V16.5a9 9 0 0 0-9-9Z" />
+                </svg>
+                <span>Copy Link</span>
+            </button>
+            <button onclick="continueHere()" class="button-gagal secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="iconx">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                </svg>
+                <span>Lanjut di Sini (Tidak Disarankan)</span>
+            </button>
+        </div>
+    </div>
+    <div id="contentWrapper" class="content-wrapper container text-tengah">
+        <!-- Partikel -->
+        <div id="particles"></div>
+    
+        <img src="/install/icon.png" alt="Icon Sultanlulu" class="logo" />
+        <h1>Install APK Sultanlulu</h1>
+        <button id="installBtn" class="btn-glow" onclick="installPWA()">Loading..</button>
+
+        <div class="hilangkan">
+            <div id="status" class="status">
+                Detecting browser type...
+            </div>
+
+            <div class="info-box">
+                <h3>Browser Information</h3>
+                <div>
+                    Browser: <span id="browserType">Detecting...</span>
+                </div>
+                <div>
+                    Platform: <span id="platform">Detecting...</span>
+                </div>
+                <div>
+                    Source: <span id="appSource">Unknown</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="info-card">
+            <p>Setelah berhasil klik tombol install, aplikasi Sultanlulu akan muncul di homescreen.</p>
+        </div>
+
+        <div class="support">
+            <h2>Support</h2>
+            <div class="support-icons">
+                <!-- ikon svg sama persis -->
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64"
+                    class="w-8 h-8 fill-white">
+                    <path
+                        d="M 19.925781 4.4589844 C 19.796875 4.4749531 19.670281 4.5169375 19.550781 4.5859375 C 19.072781 4.8619375 18.907594 5.4731719 19.183594 5.9511719 L 21.873047 10.609375 C 18.422305 13.348967 15.974304 17.411516 15.246094 22 L 48.820312 22 C 48.186567 17.305005 45.728211 13.207297 42.199219 10.486328 L 44.816406 5.9511719 C 45.092406 5.4731719 44.927219 4.8619375 44.449219 4.5859375 C 43.971219 4.3099375 43.359984 4.4731719 43.083984 4.9511719 L 40.533203 9.3691406 C 38.11257 7.9228488 35.318554 7.0613328 32.324219 7.0039062 C 29.109568 6.9424535 26.093966 7.8451485 23.509766 9.4433594 L 20.916016 4.9511719 C 20.709016 4.5926719 20.3125 4.4110781 19.925781 4.4589844 z M 24.5 14 C 25.328 14 26 14.672 26 15.5 C 26 16.328 25.328 17 24.5 17 C 23.672 17 23 16.328 23 15.5 C 23 14.672 23.672 14 24.5 14 z M 39.5 14 C 40.328 14 41 14.672 41 15.5 C 41 16.328 40.328 17 39.5 17 C 38.672 17 38 16.328 38 15.5 C 38 14.672 38.672 14 39.5 14 z M 15.039062 24.054688 C 15.027063 24.320688 15 24.583562 15 24.851562 L 15 45.90625 C 15 48.16625 16.791 50 19 50 L 22 50 L 22 56.5 C 22 57.881 23.119 59 24.5 59 C 25.881 59 27 57.881 27 56.5 L 27 50 L 37 50 L 37 56.5 C 37 57.881 38.119 59 39.5 59 C 40.881 59 42 57.881 42 56.5 L 42 50 L 45 50 C 47.209 50 49 48.16625 49 45.90625 L 49 24.947266 L 15.039062 24.054688 z M 9.5 25 C 8.119 25 7 26.119 7 27.5 L 7 35.5 C 7 36.881 8.119 38 9.5 38 C 10.881 38 12 36.881 12 35.5 L 12 27.5 C 12 26.119 10.881 25 9.5 25 z M 54.5 25 C 53.119 25 52 26.119 52 27.5 L 52 35.5 C 52 36.881 53.119 38 54.5 38 C 55.881 38 57 36.881 57 35.5 L 57 27.5 C 57 26.119 55.881 25 54.5 25 z">
+                    </path>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"
+                    class="w-8 h-8 fill-white">
+                    <path
+                        d="M 16 3 C 9.38 3 4 8.38 4 15 L 4 35 C 4 41.62 9.38 47 16 47 L 36 47 C 42.62 47 48 41.62 48 35 L 48 15 C 48 8.38 42.62 3 36 3 L 16 3 z M 12.619141 18.070312 C 13.319141 18.070312 13.839844 18.570469 13.839844 19.230469 C 13.839844 19.880469 13.319141 20.380859 12.619141 20.380859 C 11.909141 20.380859 11.390625 19.880469 11.390625 19.230469 C 11.390625 18.570469 11.909141 18.070312 12.619141 18.070312 z M 23.039062 18.640625 C 26.689062 18.640625 28.939453 21.189297 28.939453 25.279297 C 28.939453 29.359297 26.709062 31.929688 23.039062 31.929688 C 19.349062 31.929688 17.109375 29.369297 17.109375 25.279297 C 17.109375 21.179297 19.399062 18.640625 23.039062 18.640625 z M 35.970703 18.640625 C 38.540703 18.640625 40.419062 20.139297 40.539062 22.279297 L 38.619141 22.279297 C 38.429141 21.109297 37.419453 20.380859 35.939453 20.380859 C 34.379453 20.380859 33.349609 21.119531 33.349609 22.269531 C 33.349609 23.169531 34.009922 23.690078 35.669922 24.080078 L 37.060547 24.419922 C 39.670547 25.029922 40.740234 26.080234 40.740234 27.990234 C 40.740234 30.420234 38.859609 31.939453 35.849609 31.939453 C 33.039609 31.939453 31.149766 30.490703 31.009766 28.220703 L 32.960938 28.220703 C 33.130938 29.420703 34.31 30.189453 36 30.189453 C 37.58 30.189453 38.740234 29.370234 38.740234 28.240234 C 38.740234 27.280234 38.010078 26.700781 36.330078 26.300781 L 34.689453 25.910156 C 32.399453 25.370156 31.349609 24.260391 31.349609 22.400391 C 31.349609 20.140391 33.200703 18.640625 35.970703 18.640625 z M 23.039062 20.470703 C 20.649062 20.470703 19.130859 22.339297 19.130859 25.279297 C 19.130859 28.209297 20.599062 30.099609 23.039062 30.099609 C 25.449062 30.099609 26.929688 28.209297 26.929688 25.279297 C 26.929688 22.339297 25.449063 20.470703 23.039062 20.470703 z M 11.679688 22.060547 L 13.560547 22.060547 L 13.560547 31.630859 L 11.679688 31.630859 L 11.679688 22.060547 z">
+                    </path>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"
+                    class="w-8 h-8 fill-white">
+                    <path d="M4 4H24V24H4zM26 4H46V24H26zM4 26H24V46H4zM26 26H46V46H26z"></path>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30"
+                    class="w-8 h-8 fill-white">
+                    <path
+                        d="M25.565,9.785c-0.123,0.077-3.051,1.702-3.051,5.305c0.138,4.109,3.695,5.55,3.756,5.55 c-0.061,0.077-0.537,1.963-1.947,3.94C23.204,26.283,21.962,28,20.076,28c-1.794,0-2.438-1.135-4.508-1.135 c-2.223,0-2.852,1.135-4.554,1.135c-1.886,0-3.22-1.809-4.4-3.496c-1.533-2.208-2.836-5.673-2.882-9 c-0.031-1.763,0.307-3.496,1.165-4.968c1.211-2.055,3.373-3.45,5.734-3.496c1.809-0.061,3.419,1.242,4.523,1.242 c1.058,0,3.036-1.242,5.274-1.242C21.394,7.041,23.97,7.332,25.565,9.785z M15.001,6.688c-0.322-1.61,0.567-3.22,1.395-4.247 c1.058-1.242,2.729-2.085,4.17-2.085c0.092,1.61-0.491,3.189-1.533,4.339C18.098,5.937,16.488,6.872,15.001,6.688z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+
+        <footer>
+            Dengan menginstall aplikasi Sultanlulu, Anda dapat mengakses layanan lebih cepat, mudah, dan anti
+            blokir.
+        </footer>
+    </div>
+
+    <script>
+        // Generate partikel acak
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 40; i++) {
+            let p = document.createElement('div');
+            p.className = 'particle';
+            p.style.left = Math.random() * 100 + 'vw';
+            p.style.top = Math.random() * 100 + 'vh';
+            p.style.width = Math.random() * 4 + 2 + 'px';
+            p.style.height = p.style.width;
+            p.style.animationDuration = (5 + Math.random() * 5) + 's';
+            particlesContainer.appendChild(p);
+        }
+    </script>
+    <script src="/install/script.js?v=1.0.2"></script>
+</body>
+
+</html>

@@ -1,0 +1,1951 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        charset="UTF-8">
+    <title>SultanLulu - Game Online Official Indonesia</title>
+    <meta name="description"
+        content="Platform gaming resmi Indonesia dengan permainan terbaik, bonus menarik, dan keamanan terpercaya. Bergabunglah dengan jutaan pemain!" />
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="./assets/css/all.min.css" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" type="text/css">
+    <link rel="preload" href="./assets/css/Open24DisplaySt.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./assets/css/Teko-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="./assets/css/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css" type="text/css">
+    <link rel="shortcut icon" href="./assets/img/dXWE0JfPeGe6yhov.png" type="image/x-icon">
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#000000" />
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+    <meta name="facebook-domain-verification" content="b076hmokhovlelt87badxu733i933g" />
+
+    <style>
+        .header-bar1 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(90deg, #000 0%, #111 100%);
+            border-bottom: 1px solid #201e21;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 20px;
+            z-index: 1000;
+            gap: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .header-bar1 a {
+            padding: 10px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            color: #fff;
+        }
+
+        .notif-btn1 {
+            border: 2px solid #c00;
+            background: transparent;
+            box-shadow: 0 3px 6px rgba(200, 0, 0, 0.6);
+            padding: 10px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            color: #fff;
+        }
+
+        .notif-btn1:hover {
+            background: linear-gradient(180deg, #ff1a1a 0%, #cc0000 100%);
+            transform: translateY(-2px);
+        }
+
+        .promo-btn1 {
+            border: 2px solid #c00;
+            background: transparent;
+            box-shadow: 0 3px 6px rgba(200, 0, 0, 0.6);
+            padding: 10px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            color: #fff;
+        }
+
+        .promo-btn1:hover {
+            background: #c00;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* status sukses */
+        .success1 {
+            border: 2px solid #10b981 !important;
+            background: linear-gradient(180deg, #10b981 0%, #077752 100%) !important;
+            box-shadow: 0 3px 6px rgba(8, 223, 115, 0.6);
+            padding: 10px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            color: #fff;
+        }
+
+        /* status gagal */
+        .error1 {
+            border: 2px solid #616161 !important;
+            background: #87848470;
+            color: #ff7878;
+            box-shadow: none;
+            padding: 10px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        /* status warning */
+        .warning1 {
+            border: 2px solid #c00 !important;
+            background: linear-gradient(180deg, #e60000 0%, #b00000 100%) !important;
+            box-shadow: 0 3px 6px rgba(200, 0, 0, 0.6);
+            padding: 10px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            color: #fff;
+        }
+
+
+        .notif-btn1:disabled,
+        .promo-btn1:disabled {
+            background: #707070;
+            cursor: not-allowed;
+        }
+
+        .main-content1 {
+            padding-top: 80px;
+            /* supaya konten tidak ketutup header */
+            text-align: center;
+        }
+    </style>
+
+    <style>
+        @font-face {
+            font-family: Open24DisplaySt;
+            src: url(assets/css/Open24DisplaySt.woff2);
+        }
+
+        @font-face {
+            font-family: Teko-SemiBold;
+            src: url(assets/css/Teko-SemiBold.ttf);
+        }
+
+        @font-face {
+            font-family: Poppins-Regular;
+            src: url(assets/css/Poppins-Regular.ttf);
+        }
+
+        body {
+            margin: 0 auto;
+            color: #fff;
+        }
+
+        .form-control {
+            background-color: #2F211D;
+            border-color: #707070;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            color: #fff;
+        }
+
+        #right-column.active {
+            right: 0;
+            visibility: visible;
+        }
+
+        #right-column {
+            overflow: auto;
+        }
+
+        #right-column {
+            width: 60%;
+            visibility: hidden;
+            height: 100%;
+            background-color: #201E21;
+            position: fixed;
+            top: 0;
+            z-index: 1049;
+            transition: all 0.5s;
+            right: -500px;
+            text-transform: capitalize;
+            font-size: 14px;
+        }
+
+        .closebtn {
+            color: #fff;
+            position: absolute;
+            top: 0;
+            right: 9px;
+            padding: 1px 5px;
+            z-index: 3;
+            font-size: 33px;
+        }
+
+        .overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .show {
+            display: block !important;
+        }
+
+        .overlay {
+            position: fixed;
+            opacity: 0;
+            visibility: hidden;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 21;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            transition-timing-function: ease;
+        }
+
+        .active-menu-scroll {
+            position: sticky;
+            top: 112px;
+            background-color: #000;
+            z-index: 1;
+        }
+
+        #progressive_jackpot {
+            font-family: Open24DisplaySt;
+            font-size: 32px;
+            margin: auto auto auto 0;
+        }
+
+        .main-menu-outer-container {
+            display: flex;
+            z-index: 3;
+        }
+
+        .main-menu-outer-container>i {
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 0 3px;
+            top: 0
+        }
+
+        .main-menu-outer-container>main {
+            margin: 0;
+            display: flex;
+            overflow: auto;
+        }
+
+        .main-menu-outer-container>main>a:first-child {
+            margin-left: auto
+        }
+
+        .main-menu-outer-container>main>a:last-child {
+            margin-right: auto
+        }
+
+        .main-menu-outer-container>main>a {
+            display: block;
+            white-space: nowrap;
+            padding: 10px 0;
+            font-size: 11px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff
+        }
+
+        .main-menu-outer-container>main>div:first-child {
+            margin-left: auto
+        }
+
+        .main-menu-outer-container>main>div:last-child {
+            margin-right: auto
+        }
+
+        .main-menu-outer-container>main>div {
+            display: block;
+            white-space: nowrap;
+            padding: 10px 0;
+            font-size: 11px;
+            text-align: center;
+            color: #fff
+        }
+
+        .main-menu-outer-container>main>a>img {
+            display: block;
+            width: 25px;
+            margin: 10px auto
+        }
+
+        .hot-games-bounce {
+            animation-name: hot-games-bounce;
+            animation-timing-function: ease;
+        }
+
+        @keyframes hot-games-bounce {
+            0% {
+                transform: scale(1, 1) translateY(0);
+            }
+
+            10% {
+                transform: scale(1.1, .9) translateY(0);
+            }
+
+            30% {
+                transform: scale(.9, 1.1) translateY(-2px);
+            }
+
+            50% {
+                transform: scale(1, 1) translateY(0);
+            }
+
+            100% {
+                transform: scale(1, 1) translateY(0);
+            }
+        }
+
+        @property --angle {
+            syntax: '<angle>';
+            initial-value: 90deg;
+            inherits: true;
+        }
+
+        @property --gradX {
+            syntax: '<percentage>';
+            initial-value: 50%;
+            inherits: true;
+        }
+
+        @property --gradY {
+            syntax: '<percentage>';
+            initial-value: 0%;
+            inherits: true;
+        }
+
+        :root {
+            --d: 2500ms;
+            --angle: 90deg;
+            --gradX: 100%;
+            --gradY: 50%;
+            --c1: rgba(255, 255, 255, 1);
+            --c2: rgba(255, 255, 255, 0.1);
+        }
+
+        .glowing {
+            border: 0.35rem solid;
+            border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+            animation: borderRotate var(--d) linear infinite forwards;
+        }
+
+        .glowing:nth-child(2) {
+            border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+            animation: borderRadial var(--d) linear infinite forwards;
+        }
+
+        @keyframes borderRotate {
+            100% {
+                --angle: 420deg;
+            }
+        }
+
+        @keyframes borderRadial {
+            20% {
+                --gradX: 100%;
+                --gradY: 50%;
+            }
+
+            40% {
+                --gradX: 100%;
+                --gradY: 100%;
+            }
+
+            60% {
+                --gradX: 50%;
+                --gradY: 100%;
+            }
+
+            80% {
+                --gradX: 0%;
+                --gradY: 50%;
+            }
+
+            100% {
+                --gradX: 50%;
+                --gradY: 0%;
+            }
+        }
+
+        .glowing2 {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glowing2:before {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100%;
+            background-image: linear-gradient(120deg,
+                    rgba(255, 255, 255, 0) 30%,
+                    rgba(255, 255, 255, .8),
+                    rgba(255, 255, 255, 0) 70%);
+            top: 0;
+            left: -100px;
+            animation: shine 3s infinite linear;
+            /* Animation */
+        }
+
+        @keyframes shine {
+            0% {
+                left: -100px
+            }
+
+            20% {
+                left: 100%
+            }
+
+            100% {
+                left: 100%
+            }
+        }
+    </style>
+    <script src="/jquery-old.min.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+        .modal-body {
+            padding: 0;
+        }
+
+        .modal .modal-dialog {
+            color: #120608;
+            top: 60px;
+            moz-transform: translateY(0);
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        .modal-backdrop {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1040;
+            background-color: #000;
+            opacity: .5;
+        }
+
+        .announcement-container>[data-section="announcements"] {
+            flex-basis: calc(100% - 40px);
+            overflow: hidden;
+            margin: auto 0;
+        }
+
+        .tickercontainer {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .tickercontainer .mask {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        ul.newsticker {
+            position: relative;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+        }
+
+        ul.newsticker li {
+            margin: 0;
+            font-size: 12px;
+            padding: 0 25px 0 0;
+            white-space: nowrap;
+        }
+
+        .circular-menu__button {
+            display: none;
+        }
+
+        .circular-menu__button:checked+.circular-menu__icon {
+            transform: scale(1, 1) translate3d(0, 0, 0);
+            transition-duration: 0.2s;
+            transition-timing-function: linear;
+        }
+
+        .circular-menu__button:checked~.circular-menu__item {
+            transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+        }
+
+        .circular-menu__button:checked~.circular-menu__item:nth-of-type(1) {
+            transition-duration: 0.18s;
+            transform: translate3d(0px, -105px, 0);
+        }
+
+        .circular-menu__button:checked~.circular-menu__item:nth-of-type(2) {
+            transition-duration: 0.28s;
+            transform: translate3d(99.86093418px, -32.446784369999996px, 0);
+        }
+
+        .circular-menu__button:checked~.circular-menu__item:nth-of-type(3) {
+            transition-duration: 0.38s;
+            transform: translate3d(61.71745146px, 84.94678437px, 0);
+        }
+
+        .circular-menu__button:checked~.circular-menu__item:nth-of-type(4) {
+            transition-duration: 0.48s;
+            transform: translate3d(-61.71745146px, 84.94678437px, 0);
+        }
+
+        .circular-menu__button:checked~.circular-menu__item:nth-of-type(5) {
+            transition-duration: 0.58s;
+            transform: translate3d(-99.86093418px, -32.446784369999996px, 0);
+        }
+
+        .circular-menu__icon {
+            background: linear-gradient(#5F70FB, #4E63FA);
+            border-radius: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+            height: 50px;
+            line-height: 50px;
+            margin-left: 10px;
+            position: fixed;
+            text-align: center;
+            bottom: 150px;
+            transform: translate3d(0, 0, 0);
+            transition: transform ease-out 0.2s;
+            width: 50px;
+            cursor: pointer;
+            transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+            transition-duration: 0.4s;
+            transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            z-index: 7;
+        }
+
+        .circular-menu__icon:hover {
+            transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+        }
+
+        .circular-menu__item {
+            background-image: linear-gradient(#5F70FB, #4E63FA);
+            border-radius: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+            color: #fff;
+            height: 45px;
+            line-height: 45px;
+            margin-left: 10px;
+            position: fixed;
+            text-align: center;
+            bottom: 160px;
+            transform: translate3d(0, 0, 0);
+            transition: transform ease-out 0.2s;
+            width: 45px;
+            z-index: 5;
+        }
+
+        .circular-menu__item:nth-of-type(1) {
+            transition-duration: 0.18s;
+        }
+
+        .circular-menu__item:nth-of-type(2) {
+            transition-duration: 0.18s;
+        }
+
+        .circular-menu__item:nth-of-type(3) {
+            transition-duration: 0.18s;
+        }
+
+        .circular-menu__item:nth-of-type(4) {
+            transition-duration: 0.18s;
+        }
+
+        .circular-menu__item:nth-of-type(5) {
+            transition-duration: 0.18s;
+        }
+
+        .circular-menu__item:hover {
+            color: #dc143c;
+            background: #f08080;
+        }
+
+        .circular-menu__item:active,
+        .circular-menu__item:focus {
+            color: #8b0000;
+        }
+    </style>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1519945832689129');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1519945832689129&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+
+<body style="background-color: #000;">
+    <div class="overlay"></div>
+    <div class="header-bar1">
+        <button id="requestPermissionBtn" class="notif-btn1" onclick="requestNotificationPermission()">Izin
+            Notifikasi</button>
+        <button id="subscribeBtn" class="promo-btn1" onclick="subscribeToOneSignal()">Aktifkan Akun VIP</button>
+    </div>
+    <div
+        style="height: 50px; position: fixed; top: 65px; z-index: 20; background-color: #201E21; width: 100%; box-shadow: rgb(0 0 0 / 50%) 0 6px 6px -6px;">
+        <table width="90%" style="margin: 0 auto;">
+            <tbody>
+                <tr style="display: flex; height: 50px;">
+                    <td style="width: 80px;">
+                        <a href="/index.html">
+                            <img src="./assets/img/XLcKkSGsXDbITBPr.gif" alt="SULTANLULU" style="height: 50px;">
+                        </a>
+                    </td>
+
+                    <td id="open-right" style="margin: auto 0 auto auto;">
+                        <img src="./assets/img/menu.png" alt="side menu" style="width: 26px;">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div style="margin-top: 117px;">
+        <div class="slider">
+            <table width="100%" style="margin: 0 auto;">
+                <tr id="slides">
+                    <td colspan="2">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="./assets/img/ww4Sx6Wd7jl3Kw0U.jpg" alt="Qris" style="margin: 0 auto;">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./assets/img/xI2jQE8BO5dC2OI6.jpg" alt="Bonus Terbesar"
+                                        style="margin: 0 auto;">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./assets/img/WZTONz0FyVvKtsTx.jpg" alt="Bonus New Member 20%"
+                                        style="margin: 0 auto;">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./assets/img/77LKMry1UoqkYXrr.jpg" alt="Info Penting"
+                                        style="margin: 0 auto;">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./assets/img/ZTKbmNvIXuYkaGkQ.jpg" alt="Hadiah Tanpa Undi"
+                                        style="margin: 0 auto;">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./assets/img/wfiRplgwD6bKjy3P.jpg" alt="Menerima Deposit"
+                                        style="margin: 0 auto;">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button"
+                                data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button"
+                                data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="announcement-container" style="display: flex; padding: 8px 0; background-color: #201E21;">
+            <div data-section="date">
+                <img src="./assets/img/broadcast.png" alt="broadcast" style="width: 20px; margin: 0 8px;">
+            </div>
+            <div data-section="announcements">
+                <div id="ER_1655967104278">
+                    <div class="tickercontainer">
+                        <div class="mask">
+                            <ul class="announcement-list newsticker" id="announcement_list"
+                                style="color: #EBEBEB; width: 4369px; left: -76.2600024414062px;">
+                                <li class="tick-clones">#Selamat Datang di Sultan Lulu. Mohon periksa kembali nomor
+                                    rekening tujuan deposit sebelum melakukan transfer untuk menghindari kesalahan.
+                                    Gunakan link alternatif apabila situs utama tidak dapat diakses: sultanlulu.vip</li>
+                                <li>#Selamat Datang di Sultan Lulu. Mohon periksa kembali nomor rekening tujuan deposit
+                                    sebelum melakukan transfer untuk menghindari kesalahan. Gunakan link alternatif
+                                    apabila situs utama tidak dapat diakses: sultanlulu.vip</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color: #000; display: flex; padding: 8px 0; font-weight: 500;">
+            <div class="glowing" onclick="window.location='https://gatottech.io/luluapp'"
+                style="background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #e99c05 0%, #f4ae00 8%, #f8bf33 25%, #f8ce19 62.5%, #ffdc02 100%); display: flex; margin: auto 3% auto auto; border-radius: 3px; width: 120px; padding: 6px 0; letter-spacing: 1px;">
+                <div style="margin: auto;">MASUK</div>
+            </div>
+            <div class="glowing" onclick="window.location='https://sultanlulugo.com/link/go?to=daftar'"
+                style="background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #e99c05 0%, #f4ae00 8%, #f8bf33 25%, #f8ce19 62.5%, #ffdc02 100%); display: flex; margin: auto auto auto 3%; border-radius: 3px; width: 120px; padding: 6px 8px; letter-spacing: 1px;">
+                <div style="margin: auto;">DAFTAR</div>
+            </div>
+        </div>
+
+        <div class="main-menu-outer-container" id="main_menu_outer_container">
+            <i class="glyphicon glyphicon-chevron-left left_trigger"></i>
+            <main>
+                <a href="https://sultanlulugo.com/link/go?to=togel" style="min-width: 80px;">
+                    <img src="./assets/img/game-7-mobile.png" alt="togel" style="width: 30px;">
+                    Togel
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot" style="min-width: 80px;">
+                    <img src="./assets/img/game-2-mobile.png" alt="slot" style="width: 30px;">
+                    Slot
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=live-casino" style="min-width: 80px;">
+                    <img src="./assets/img/game-3-mobile.png" alt="live casino" style="width: 30px;">
+                    Live Casino
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=sport" style="min-width: 80px;">
+                    <img src="./assets/img/game-5-mobile.png" alt="sport" style="width: 30px;">
+                    Sport
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=sabung-ayam" style="min-width: 80px;">
+                    <img src="./assets/img/game-8-mobile.png" alt="sabung ayam" style="width: 30px;">
+                    Sabung Ayam
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=tembak-ikan" style="min-width: 80px;">
+                    <img src="./assets/img/game-4-mobile.png" alt="tembak ikan" style="width: 30px;">
+                    Tembak Ikan
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=virtual" style="min-width: 80px;">
+                    <img src="./assets/img/game-6-mobile.png" alt="virtual" style="width: 30px;">
+                    Virtual
+                </a>
+            </main>
+            <i class="glyphicon glyphicon-chevron-right right_trigger"></i>
+        </div>
+
+        <div
+            style="font-family: Teko-SemiBold; text-align: center; font-size: 24px; padding-top: 20px; color: transparent !important; -webkit-background-clip: text; background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #e99c05 0%, #f4ae00 8%, #f8bf33 25%, #f8ce19 62.5%, #ffdc02 100%);">
+            JACKPOT PROGRESIF
+        </div>
+
+        <div
+            style="background:url(assets/img/jackpot-mobile.jpg); background-position: center top; background-repeat: no-repeat; background-size: 100% 100%; height: 70px; margin-bottom: 20px;">
+            <div style="display: flex; padding-top: 10px;">
+                <div
+                    style="color: transparent !important; -webkit-background-clip: text; background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #e99c05 0%, #f4ae00 8%, #f8bf33 25%, #f8ce19 62.5%, #ffdc02 100%); font-family: Open24DisplaySt; font-size: 32px; margin: auto 8px auto auto;">
+                    IDR
+                </div>
+                <div id="progressive_jackpot"></div>
+            </div>
+        </div>
+
+        <div style="width: 90%; margin: 0 auto; padding-top: 10px;">
+            <div
+                style="background: linear-gradient(to right, #070707, #BC9F00); display: flex; padding: 4px 0 4px 10px; border-left: 2px solid #FFD700;">
+                <img src="./assets/img/game-7-mobile.png" class="hot-games-bounce" alt="togel"
+                    style="margin: auto 0; width: 18px; height: 18px; animation-duration: 3s; animation-iteration-count: infinite;">
+                <div style="color: #FFD700; font-weight: bold; font-size: 14px; margin: auto auto auto 4px;">Togel</div>
+            </div>
+        </div>
+
+        <div class="main-menu-outer-container" style="padding-top: 10px;">
+            <i class="glyphicon glyphicon-chevron-left left_trigger"></i>
+            <main class="lottery_market"></main>
+            <i class="glyphicon glyphicon-chevron-right right_trigger"></i>
+        </div>
+
+        <div style="width: 90%; margin: 0 auto; padding-top: 10px;">
+            <div
+                style="background: linear-gradient(to right, #070707, #BC9F00); display: flex; padding: 4px 0 4px 10px; border-left: 2px solid #FFD700;">
+                <img src="./assets/img/game-2-mobile.png" class="hot-games-bounce" alt="slot"
+                    style="margin: auto 0; width: 18px; height: 18px; animation-duration: 3s; animation-iteration-count: infinite;">
+                <div style="color: #FFD700; font-weight: bold; font-size: 14px; margin: auto auto auto 4px;">Slot</div>
+            </div>
+        </div>
+
+        <div class="main-menu-outer-container">
+            <i class="glyphicon glyphicon-chevron-left left_trigger"></i>
+            <main>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-1"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/fftANbjv93jOl65N.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-2"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/u6CrwN7HjS7YpyMk.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-33"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/wBMn0JMwHqR15Q9h.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-34"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/Y6z4g9iAch8XkEFC.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-37"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/641tmm7GA9EQLT88.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-38"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/d8ClG2FW0RUdLfBF.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-36"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/qAS4benNwP9OhFfm.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-35"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/3eVr8EQfYFOCXzjy.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-32"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/ZV7vTJPNrYzdfUKE.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-4"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/UaFoOedpYsw8wTlM.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-3"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/zYSbZe6vw1agXk2u.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-10"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/z5gKY7NUGNsjppJ5.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-8"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/x7mLRm9LFNKhVgfd.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-31"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/DUIA5m4LbJWbPBbn.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-9"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/pFZb3hsQ2XOhP3Xb.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-30"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/egt8DoiXW11Q97PY.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-5"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/qYbwJgxwboqgp2vv.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-29"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/IaFiCl56FJpTz4pd.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-16"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/STjV8dUJyrNVfCPq.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-17"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/78h82sxOCWZU5iXM.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-24"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/XsVjAaNBoIpN5Ceq.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-15"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/NYi4Q4IkxFuwV7Ic.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-26"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/qnPX8qvYnT6sdVoH.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-6"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/zQhLX87lI5RdNLhR.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=slot-provider-13"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/lsLs8N1KmgtKh8Ou.png" alt="slot" style="width: 120px; border-radius: 4px;">
+                </a>
+            </main>
+            <i class="glyphicon glyphicon-chevron-right right_trigger"></i>
+        </div>
+
+        <div style="width: 90%; margin: 0 auto; padding-top: 10px;">
+            <div
+                style="background: linear-gradient(to right, #070707, #BC9F00); display: flex; padding: 4px 0 4px 10px; border-left: 2px solid #FFD700;">
+                <img src="./assets/img/game-3-mobile.png" class="hot-games-bounce" alt="live casino"
+                    style="margin: auto 0; width: 18px; height: 18px; animation-duration: 3s; animation-iteration-count: infinite;">
+                <div style="color: #FFD700; font-weight: bold; font-size: 14px; margin: auto auto auto 4px;">Live Casino
+                </div>
+            </div>
+        </div>
+
+        <div class="main-menu-outer-container">
+            <i class="glyphicon glyphicon-chevron-left left_trigger"></i>
+            <main>
+                <a href="https://gatottech.io/luluapp" style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/GGZSQzPi3K0EST06.png" alt="live casino"
+                        style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://gatottech.io/luluapp" style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/7XraZf4dTjhBCnGV.png" alt="live casino"
+                        style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=live-casino-provider-33"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/VXxFB9VzGIBq9BDX.png" alt="live casino"
+                        style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://gatottech.io/luluapp" style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/506zzvpHEcCz1fw1.png" alt="live casino"
+                        style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://gatottech.io/luluapp" style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/x4A54lpFqLrFvhFp.png" alt="live casino"
+                        style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://gatottech.io/luluapp" style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/vCpvblkSAYmNEPky.png" alt="live casino"
+                        style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://gatottech.io/luluapp" style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/4N9nXFKTmEJUBl9g.png" alt="live casino"
+                        style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://gatottech.io/luluapp" style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/SZwKtjnBCApJXQSX.png" alt="live casino"
+                        style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://gatottech.io/luluapp" style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/OXMhDarBTGLy67dj.png" alt="live casino"
+                        style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=live-casino-provider-15"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/HyfhgwpNUWrzVY5D.png" alt="live casino"
+                        style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://gatottech.io/luluapp" style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/RLbgt84eD1uoUIno.png" alt="live casino"
+                        style="width: 120px; border-radius: 4px;">
+                </a>
+            </main>
+            <i class="glyphicon glyphicon-chevron-right right_trigger"></i>
+        </div>
+
+        <div style="width: 90%; margin: 0 auto; padding-top: 10px;">
+            <div
+                style="background: linear-gradient(to right, #070707, #BC9F00); display: flex; padding: 4px 0 4px 10px; border-left: 2px solid #FFD700;">
+                <img src="./assets/img/game-5-mobile.png" class="hot-games-bounce" alt="sport"
+                    style="margin: auto 0; width: 18px; height: 18px; animation-duration: 3s; animation-iteration-count: infinite;">
+                <div style="color: #FFD700; font-weight: bold; font-size: 14px; margin: auto auto auto 4px;">Sport</div>
+            </div>
+        </div>
+
+        <div class="main-menu-outer-container">
+            <i class="glyphicon glyphicon-chevron-left left_trigger"></i>
+            <main>
+                <a href="https://gatottech.io/luluapp" style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/T15pFEYAhfe4PSYa.png" alt="sport" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://gatottech.io/luluapp" style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/QVsxEuFUnbJUSWvq.png" alt="sport" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://gatottech.io/luluapp" style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/NpdM33GcsFfWoT9U.png" alt="sport" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://gatottech.io/luluapp" style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/5U6o0ebGTiBShfHF.png" alt="sport" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://gatottech.io/luluapp" style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/sfS8Gcxtut7UhUfQ.png" alt="sport" style="width: 120px; border-radius: 4px;">
+                </a>
+            </main>
+            <i class="glyphicon glyphicon-chevron-right right_trigger"></i>
+        </div>
+
+        <div style="width: 90%; margin: 0 auto; padding-top: 10px;">
+            <div
+                style="background: linear-gradient(to right, #070707, #BC9F00); display: flex; padding: 4px 0 4px 10px; border-left: 2px solid #FFD700;">
+                <img src="./assets/img/game-8-mobile.png" class="hot-games-bounce" alt="sabung ayam"
+                    style="margin: auto 0; width: 18px; height: 18px; animation-duration: 3s; animation-iteration-count: infinite;">
+                <div style="color: #FFD700; font-weight: bold; font-size: 14px; margin: auto auto auto 4px;">Sabung Ayam
+                </div>
+            </div>
+        </div>
+
+        <div class="main-menu-outer-container">
+            <i class="glyphicon glyphicon-chevron-left left_trigger"></i>
+            <main>
+                <a href="https://gatottech.io/luluapp" style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/wvbEnWbNb17vNCcO.png" alt="cock" style="width: 120px; border-radius: 4px;">
+                </a>
+            </main>
+            <i class="glyphicon glyphicon-chevron-right right_trigger"></i>
+        </div>
+
+        <div style="width: 90%; margin: 0 auto; padding-top: 10px;">
+            <div
+                style="background: linear-gradient(to right, #070707, #BC9F00); display: flex; padding: 4px 0 4px 10px; border-left: 2px solid #FFD700;">
+                <img src="./assets/img/game-4-mobile.png" class="hot-games-bounce" alt="tembak ikan"
+                    style="margin: auto 0; width: 18px; height: 18px; animation-duration: 3s; animation-iteration-count: infinite;">
+                <div style="color: #FFD700; font-weight: bold; font-size: 14px; margin: auto auto auto 4px;">Tembak Ikan
+                </div>
+            </div>
+        </div>
+
+        <div class="main-menu-outer-container">
+            <i class="glyphicon glyphicon-chevron-left left_trigger"></i>
+            <main>
+                <a href="https://sultanlulugo.com/link/go?to=tembak-ikan-provider-31"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/OVssGriZth5EhjaB.png" alt="fish" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=tembak-ikan-provider-10"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/WhB6ZwNaUh1FaicC.png" alt="fish" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=tembak-ikan-provider-3"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/HpN4bTRFqDot7sq4.png" alt="fish" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=tembak-ikan-provider-5"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/PdoCaJ3tv4YPceEQ.png" alt="fish" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=tembak-ikan-provider-8"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/ovvQTpwHZFTyauAL.png" alt="fish" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=tembak-ikan-provider-26"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/y4zQhrs8056gsrG9.png" alt="fish" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=tembak-ikan-provider-30"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/2EjvyhNMo7IhYHv0.png" alt="fish" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=tembak-ikan-provider-29"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/RF3e3cnDiWtzpPxE.png" alt="fish" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=tembak-ikan-provider-32"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/TlkoQsc4Uwjv7ls6.png" alt="fish" style="width: 120px; border-radius: 4px;">
+                </a>
+            </main>
+            <i class="glyphicon glyphicon-chevron-right right_trigger"></i>
+        </div>
+
+        <div style="width: 90%; margin: 0 auto; padding-top: 10px;">
+            <div
+                style="background: linear-gradient(to right, #070707, #BC9F00); display: flex; padding: 4px 0 4px 10px; border-left: 2px solid #FFD700;">
+                <img src="./assets/img/game-6-mobile.png" class="hot-games-bounce" alt="virtual"
+                    style="margin: auto 0; width: 18px; height: 18px; animation-duration: 3s; animation-iteration-count: infinite;">
+                <div style="color: #FFD700; font-weight: bold; font-size: 14px; margin: auto auto auto 4px;">Virtual
+                </div>
+            </div>
+        </div>
+
+        <div class="main-menu-outer-container" style="padding-bottom: 20px;">
+            <i class="glyphicon glyphicon-chevron-left left_trigger"></i>
+            <main>
+                <a href="https://sultanlulugo.com/link/go?to=virtual-provider-1"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/v8SoZ8YDSllm4bnH.png" alt="virtual" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=virtual-provider-3"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/EmWHQHv3khjIG6Jb.png" alt="virtual" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=virtual-provider-4"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/COH9PQVpYiFScBlH.png" alt="virtual" style="width: 120px; border-radius: 4px;">
+                </a>
+                <a href="https://sultanlulugo.com/link/go?to=virtual-provider-6"
+                    style="margin-right: 10px; margin-top: -10px;">
+                    <img src="./assets/img/mrrP7P7QLTuH5XcL.png" alt="virtual" style="width: 120px; border-radius: 4px;">
+                </a>
+            </main>
+            <i class="glyphicon glyphicon-chevron-right right_trigger"></i>
+        </div>
+        
+        <div id="menu-toggle" 
+     style="position: fixed; bottom: 70px; left: 17px; z-index: 20; cursor: pointer;">
+    <img src="https://moho.sgp1.cdn.digitaloceanspaces.com/Icon/olg/menu.gif" 
+         alt="menu" width="60" height="60" class="wxwx2"/>
+</div>
+
+<!-- Kontainer Tombol-Tombol Tambahan -->
+<div id="menu-buttons" 
+     style="position: fixed; bottom: 135px; left: 20px; z-index: 20; display: none; flex-direction: column; gap: 5px;">
+    
+    <!-- Tombol WA -->
+    <a href="https://api.whatsapp.com/send?phone=6285959176119" target="_blank" rel="noopener">
+        <img src="./assets/img/WhatsApp.gif" 
+             alt="WA_sultanlulu" width="50" height="50" class="wxwx1"/>
+    </a>
+
+    <!-- Tombol LIVECHAT -->
+    <a href="https://direct.lc.chat/19217124/" target="_blank" rel="noopener">
+        <img src="./assets/img/LiveChat.gif" 
+             alt="livechat_sultanlulu" width="50" height="50" class="wxwx1"/>
+    </a>
+
+    <!-- Tombol TELEGRAM -->
+    <a href="https://t.me/Sultanlulu88" target="_blank" rel="noopener">
+        <img src="./assets/img/Telegram.gif" 
+             alt="tele_sultanlulu" width="50" height="50" class="wxwx1"/>
+    </a>
+
+    <!-- Tombol PREDIKSI -->
+    <a href="https://gatottech.io/prediksi-harian" target="_blank" rel="noopener">
+        <img src="./assets/img/PrediksiTogel.gif" 
+             alt="prediksi_sultanlulu" width="50" height="50" class="wxwx1"/>
+    </a>
+
+    <!-- Tombol BW -->
+    <a href="https://gatottech.io/buktijp-sultanlulu" target="_blank" rel="noopener">
+        <img src="./assets/img/BuktiWD.gif" 
+             alt="buktiwd_sultanlulu" width="50" height="50" class="wxwx1"/>
+    </a>
+
+    <!-- Tombol APK -->
+    <a href="/install/" target="_blank" rel="noopener">
+        <img src="./assets/img/APK.gif" 
+             alt="APK" width="50" height="50" class="wxwx1"/>
+    </a>
+</div>
+
+<script>
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu-buttons");
+
+    // Pastikan tombol utama terlihat saat halaman dimuat
+    toggle.style.display = "block";
+
+    // Saat diklik, tampilkan/sembunyikan menu tambahan
+    toggle.addEventListener("click", function () {
+        menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+    });
+</script>
+
+        <!--<nav class="circular-menu">-->
+        <!--    <input class="circular-menu__button" id="circular-menu" type="checkbox" href="javascript: void 0" />-->
+        <!--    <label class="circular-menu__icon" for="circular-menu">-->
+        <!--        <i class="fa fa-bars" style="font-size: 25px; vertical-align: middle;"></i>-->
+        <!--    </label>-->
+        <!--    <a class="circular-menu__item" href="https://sultanlulugo.com/link/go?to=rtp-live">-->
+        <!--        <img src="./assets/img/pCy6mvhhS7290YB4.gif" width="45" height="45" border="0" alt="RTP"-->
+        <!--            style="border-radius: 100%; margin-top: -3px;">-->
+        <!--    </a>-->
+        <!--</nav>-->
+        <div class="setting_welcome" style="display: none;">
+            <div class="modal-backdrop"></div>
+            <div class="modal modal-info" data-backdrop="static" role="dialog" style="display: block;">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header" style="display: block;">
+                            <button type="button" class="close close-modal close-notif" data-dismiss="modal"
+                                aria-label="Close"><span aria-hidden="true">×</span></button>
+                        </div>
+                        <div class="modal-body" style="padding: 8px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bg"
+            style="background:url(assets/img/footer-mobile.jpg); position: relative; background-size: 100% auto; width: 100%; background-repeat: repeat; background-position: top; padding: 20px 0; color: #fff;">
+            <div style="margin-left: 15px; position: relative; z-index: 2;">
+                Bekerja sama dengan BANK :
+
+                <ul
+                    style="list-style-type: none; padding: 15px 0 0 0; margin-bottom: 30px; display: flex; flex-wrap: wrap; text-align: center;">
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/VahK6oop7qhgeCuc.png" alt="BCA" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/Zawv1ETDe1MiBN1v.png" alt="BNI" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/k4EGb86Wy3xRseCd.png" alt="BRI" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/kvN6HVotOvAMRzJk.png" alt="CIMB" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/kOhTvpgAcK7PMiNR.png" alt="Mandiri" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/KQ9ioPngRVBhfjaH.png" alt="Danamon" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/vqbAoeN3q4GEbtQz.png" alt="OVO" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/G56oYQ3hpmUHJBgP.png" alt="GOPAY" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/4t5RvgC7uiRGNcZq.png" alt="DANA" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/I10CIHwGhNcxSY0N.png" alt="LINKAJA" style="width: 70%;">
+                        </div>
+                    </li>
+                </ul>
+
+                Bekerja sama dengan PROVIDER :
+
+                <ul
+                    style="list-style-type: none; padding: 15px 0 0 0; margin-bottom: 30px; display: flex; flex-wrap: wrap; text-align: center;">
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/hP4uaW1j9K2AlyVv.png" alt="Pragmatic" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/w9D4o4hXE6Ffxkct.png" alt="Pg Soft" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/Qn9ydbba5HAHVpqt.png" alt="Joker" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/STgyifWgfxZX8Xdd.png" alt="Habanero" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/7NyF4s7qBEfZdzYv.png" alt="Spade Gaming" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/4qvaCEyPoRKnSoRK.png" alt="Play&#039;n Go" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/qVj2pc4tq5jNTETa.png" alt="JiLi" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/2bxUoiMZiTUWITao.png" alt="Naga" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/oRI9UH3PqlrVdkrc.png" alt="CQ9" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/hU7lEGuKZbz9OLTP.png" alt="SA Gaming" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/ApAdJUPi82CnZTCY.png" alt="Saba" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/TIHHJatZGX0j0E7O.png" alt="Sbobet" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/PCIJfHBobXU23DYh.png" alt="Evo Gaming" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/z3JBuC9gdC8YRGi5.png" alt="Red Tiger" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/qKNOBHGMC3Wg7dUY.png" alt="NetEnt" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/kFdpl9SeA38NdO7f.png" alt="BTG" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/8txgJayRQEb6bL12.png" alt="Cock Fighting" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/BOPxvOvQoOweFna3.png" alt="WM" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/EpMjjKkesBhNT5lI.png" alt="YeeBet" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/gmmomXzsKnwrcfOJ.png" alt="Sexy Gaming" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/YMB5vRqv4ay7ACM5.png" alt="Pinnacle" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/YpMisNvksbUZnl9M.png" alt="UG Gaming" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/OxRGZisxBcqAj8eM.png" alt="No Limit City" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/TS5Hs0Er3bKNf1Gm.png" alt="AG Gaming" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/YhxpfaUCngU9U9zA.png" alt="WM Slot" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/p7g9ot1imVr9V8ei.png" alt="CMD" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/wbqQE1MyfQYM6gIG.png" alt="WE" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/4Q4HAv8VBYlUHAjZ.png" alt="FaChai" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/3TxQyknwmOKq4aUq.png" alt="Rich88" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/NQLOXaCrM298SxMK.png" alt="MicroGaming" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/lvQoNDpqIVWb0zas.png" alt="Fast Spin" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/fnDYskKRsM11p1Uf.png" alt="PlayTech" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/ECNzxNfUvkFm4fci.png" alt="Besoft" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/DPmzuCH2rQlEDfqa.png" alt="Yggdrasil" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/gQsHrMWuWIn6Jkwd.png" alt="Relax" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/PcM0ND3RJmzOwkyM.png" alt="Hacksaw" style="width: 70%;">
+                        </div>
+                    </li>
+                    <li style="display: inline-block; width: 33%; padding: 0 8px 0 0; margin-bottom: 6px;">
+                        <div style="padding: 2px 4%; border: 1px solid #E3E2DE; border-radius: 4px;">
+                            <img src="./assets/img/JMWGAwRJouC2hmH6.png" alt="GG Soft" style="width: 70%;">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <footer>
+                <div style="width: 100%; padding: 0 15px; position: relative; z-index: 2;">
+                    <h1 class="whitespace-normal break-words"><strong>Selamat datang di <em>SultanLulu</em> - Platform
+                            Gaming Online Official Indonesia!</strong></h1>
+                    <p class="whitespace-normal break-words">Nikmati pengalaman gaming terdepan di
+                        <strong>SultanLulu</strong>, destinasi utama para pecinta permainan online di Indonesia. Sebagai
+                        platform gaming resmi dan terpercaya, kami menghadirkan berbagai macam permainan menarik yang
+                        siap memberikan Anda hiburan berkualitas tinggi setiap harinya.
+                    </p>
+                    <h2 class="whitespace-normal break-words"><strong><em>Mengapa Memilih SultanLulu?</em></strong></h2>
+                    <p class="whitespace-normal break-words">Dengan teknologi canggih dan <em><strong>sistem keamanan
+                                berlapis</strong></em>, SultanLulu menjamin pengalaman bermain yang <em>aman, nyaman,
+                            dan menyenangkan</em>. Platform kami dilengkapi dengan <strong>interface
+                            user-friendly</strong> yang memudahkan navigasi, baik untuk pemula maupun pemain
+                        berpengalaman.</p>
+                    <h2 class="whitespace-normal break-words"><em><strong>Koleksi Permainan Terlengkap</strong></em>
+                    </h2>
+                    <p class="whitespace-normal break-words">Jelajahi beragam kategori permainan eksklusif yang tersedia
+                        24/7:</p>
+                    <ul
+                        class="[&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc space-y-1.5 pl-7">
+                        <li class="whitespace-normal break-words"><strong>Slot Games</strong> dengan <em>grafis
+                                memukau</em> dan <strong>fitur bonus menarik</strong></li>
+                        <li class="whitespace-normal break-words"><strong>Live Casino</strong> dengan dealer profesional
+                            real-time</li>
+                        <li class="whitespace-normal break-words"><strong>Sports Entertainment</strong> untuk penggemar
+                            olahraga</li>
+                        <li class="whitespace-normal break-words"><strong>Arcade Games</strong> yang <strong>seru dan
+                                menghibur</strong></li>
+                    </ul>
+                    <h2 class="whitespace-normal break-words"><strong><em>Keunggulan Platform Kami</em></strong></h2>
+                    <p class="whitespace-normal break-words">SultanLulu mengutamakan <em><strong>kenyamanan dan kepuasan
+                                member</strong></em> melalui:</p>
+                    <ul
+                        class="[&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc space-y-1.5 pl-7">
+                        <li class="whitespace-normal break-words">Layanan customer support <strong>24 jam
+                                non-stop</strong></li>
+                        <li class="whitespace-normal break-words"><em>Proses transaksi cepat dan aman</em></li>
+                        <li class="whitespace-normal break-words"><strong>Bonus dan promosi menarik</strong> setiap hari
+                        </li>
+                        <li class="whitespace-normal break-words"><strong>Aplikasi mobile</strong> yang responsif dan
+                            mudah digunakan</li>
+                    </ul>
+                    <p class="whitespace-normal break-words"><em><strong>Bergabunglah dengan Komunitas Gaming
+                                Terbaik!</strong></em></p>
+                    <p class="whitespace-normal break-words">Daftarkan diri Anda sekarang dan rasakan sensasi bermain di
+                        platform gaming <strong><em>paling terpercaya di Indonesia</em></strong>. Dengan <strong>ribuan
+                            member aktif</strong> dan <strong>sistem fair play</strong> yang terjamin, SultanLulu adalah
+                        pilihan tepat untuk mengisi waktu luang Anda.</p>
+                    <p class="whitespace-normal break-words"><em><strong>Mulai petualangan gaming Anda bersama
+                                SultanLulu - dimana setiap permainan adalah pengalaman yang tak
+                                terlupakan!</strong></em></p>
+                    <p class="whitespace-normal break-words"><strong>Ready to play? <em>Let's get started!</em></strong>
+                    </p>
+                </div>
+
+                <div
+                    style="font-weight: bold; color: #fff; text-align: center; padding: 35px 20px 70px 20px; position: relative; z-index: 2;">
+                    <h1 style="font-size: 15px; margin-top: 0;">©2025 SULTANLULU. All rights reserved | 18+</h1>
+                </div>
+            </footer>
+        </div>
+
+        <div id="right-column">
+            <div class="closebtn">×</div>
+            <div style="padding: 50px 20px 30px 20px; border-bottom: 2px solid #fff;">
+                <div>
+                    <!--<input type="hidden" name="_token" value="4yYaWomTahCxsTJKMJG6Yqb39LC3mUD8wMwVuRmL">-->
+                    <!--<div style="position: relative;">-->
+                    <!--    <img src="./assets/img/username.png" alt="username"-->
+                    <!--        style="position: absolute; top: 10px; left: 15px; height: 18px; width: 18px; margin: 0;">-->
+                    <!--    <input type="text" name="username" placeholder="Username"-->
+                    <!--        style="background-color: transparent; color: #fff; border: 1px solid #fff; width: 100%; border-radius: 5px; padding: 8px 15px 8px 40px; margin-bottom: 10px;">-->
+                    <!--</div>-->
+                    <!--<div style="position: relative;">-->
+                    <!--    <img src="./assets/img/password.png" alt="password"-->
+                    <!--        style="position: absolute; top: 10px; left: 15px; height: 18px; width: 18px; margin: 0;">-->
+                    <!--    <input type="password" name="password" placeholder="Password"-->
+                    <!--        style="background-color: transparent; color: #fff; border: 1px solid #fff; width: 100%; border-radius: 5px; padding: 8px 15px 8px 40px; margin-bottom: 10px;">-->
+                    <!--</div>-->
+                    <div style="display: flex; margin-top: 10px;">
+
+                        <a href="https://gatottech.io/luluapp"
+                            style="color: #fff; border: 1px solid #fff; border-radius: 20px; width: 50%; background-color: transparent; margin-right: 10px; padding: 3px 0; text-align: center;">
+                            MASUK
+                        </a>
+                        <a href="https://sultanlulugo.com/link/go?to=daftar" class="glowing2"
+                            style="color: #fff; border-radius: 20px; width: 50%; background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #e99c05 0%, #f4ae00 8%, #f8bf33 25%, #f8ce19 62.5%, #ffdc02 100%); text-align: center; padding: 4px 0;">
+                            DAFTAR
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="padding: 20px 20px 0 20px;">
+                <a href="https://sultanlulugo.com/link/go?to=buku-mimpi" style="display: flex; color: #fff;">
+                    <img src="./assets/img/book-blue.png" alt="buku mimpi" style="width: 24px;">
+                    <div style="margin: auto 8px;">
+                        Buku Mimpi
+                    </div>
+                </a>
+            </div>
+
+            <div style="padding: 20px;">
+                <a href="https://sultanlulugo.com/link/go?to=ganti-mode" style="display: flex; color: #fff;">
+                    <img src="./assets/img/desktop.png" alt="desktop" style="width: 24px;">
+                    <div style="margin: auto 8px;">
+                        Versi Desktop
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div
+            style="background-color: #201E21; position: fixed; z-index: 5; bottom: 0; width: 100%; padding: 8px 0; box-shadow: rgb(0 0 0 / 50%) 0 -6px 6px -6px;">
+            <table width="100%" style="font-size: 12px;">
+                <tbody>
+                    <tr>
+                        <td style="text-align: center; width: 20%;">
+                            <a href="/index.html">
+                                <img src="./assets/img/menu-1.png" alt="home" style="width: 27px;">
+                                <div style="color: #FFD700; margin-top: 2px;">Beranda</div>
+                            </a>
+                        </td>
+                        <td style="text-align: center; width: 20%;">
+                            <a href="https://sultanlulugo.com/link/go?to=rtp-live">
+                                <img src="./assets/img/menu-2.png" alt="rtp" style="width: 27px;">
+                                <div style="color: #FFD700; margin-top: 2px;">RTP</div>
+                            </a>
+                        </td>
+                        <td style="text-align: center; width: 20%; position: relative;">
+                            <a href="https://gatottech.io/luluapp"
+                                style="position: absolute; transform: translate(50%, 0); right: 50%; bottom: 0;">
+                                <img src="./assets/img/menu-3.png" alt="masuk"
+                                    style="background-color: #000; width: 48px; border-radius: 50%;">
+                                <div style="color: #FFD700; margin-top: 2px;">Masuk</div>
+                            </a>
+                        </td>
+                        <td style="text-align: center; width: 20%;">
+                            <a href="promo.html">
+                                <img src="./assets/img/menu-4.png" alt="promo" style="width: 27px;">
+                                <div style="color: #FFD700; margin-top: 2px;">Promo</div>
+                            </a>
+                        </td>
+                        <td style="text-align: center; width: 20%;">
+                            <a href="sosmed.html">
+                                <img src="./assets/img/menu-5.png" alt="chat" style="width: 27px;">
+                                <div style="color: #FFD700; margin-top: 2px;">Hubungi</div>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="./assets/js/jquery.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <script src="./assets/js/custom.min.js"></script>
+        <script type="text/javascript">
+            $('.circular-menu__icon').on('click', function () {
+                $(".overlay").toggleClass("show");
+                if ($('.circular-menu__button').is(":checked")) {
+                    $('.circular-menu__icon').html('<i class="fa fa-bars" style="font-size: 25px; vertical-align: middle;"></i>').css('background', 'linear-gradient(#5F70FB, #4E63FA)').css('left', '0').css('z-index', '7');
+                    $('.circular-menu__item').css('left', '0').css('z-index', '5').css('width', '45px').css('height', '45px').css('line-height', '45px');
+                } else {
+                    $('.circular-menu__icon').html('<i class="fa fa-close" style="font-size: 25px; vertical-align: middle;"></i>').css('background', 'linear-gradient(#E62525, #B10202)').css('left', 'calc(50% - 35px)').css('z-index', '1055');
+                    $('.circular-menu__item').css('left', 'calc(50% - 35px)').css('z-index', '1049').css('width', '60px').css('height', '60px').css('line-height', '60px');
+                }
+            });
+            $('#open-right').on('click', function () {
+                $("#right-column").toggleClass("active");
+                $("#right-column li").toggleClass("active");
+                $(".overlay").toggleClass("show");
+            });
+            $('.overlay').on('click', function () {
+                $("#right-column").removeClass("active");
+                $("#right-column li").removeClass("active");
+                $(".overlay").removeClass("show");
+                $('.circular-menu__button').prop('checked', false);
+                $('.circular-menu__icon').html('<i class="fa fa-bars" style="font-size: 25px; vertical-align: middle;"></i>').css('background', 'linear-gradient(#5F70FB, #4E63FA)').css('left', '0').css('z-index', '7');
+                $('.circular-menu__item').css('left', '0').css('z-index', '5').css('width', '45px').css('height', '45px').css('line-height', '45px');
+            });
+            $('.closebtn').on('click', function () {
+                $("#right-column").removeClass("active");
+                $("#right-column li").removeClass("active");
+                $(".overlay").removeClass("show");
+            });
+            $('.close-modal').on('click', function () {
+                $(".modal-info").remove();
+                $(".modal-backdrop").remove();
+            });
+            $(window).scroll(function (event) {
+                var scroll = $(window).scrollTop();
+                var element_position = $('#main_menu_outer_container').offset().top - 50;
+
+                if (scroll >= element_position) {
+                    $('#main_menu_outer_container').addClass('active-menu-scroll');
+                }
+            });
+        </script>
+        <script>
+            $(document).on('click', '.close-notif', function () {
+                $('.notif').remove();
+
+                $.ajax({
+                    url: 'https://sultanlulu.xyz/tutup-notifikasi',
+                    type: "GET",
+                    success: function () {
+                        return true;
+                    },
+                    error: function (res) {
+                        toastr['error'](res.error);
+                    }
+                });
+            });
+
+            $(document).ready(function () {
+                $.ajax({
+                    url: 'https://sultanlulu.xyz/get-configuration',
+                    type: "GET",
+                    success: function (data) {
+                        if (data.close_notification === false) {
+                            if (data.setting_welcome.description != null) {
+                                $('.setting_welcome').css('display', 'block');
+                                $('.modal-body').append(data.setting_welcome.description);
+                            }
+                            if (data.setting_welcome.path_link != null) {
+                                $('.setting_welcome').css('display', 'block');
+                                $('.modal-body').append('<div><img src="' + data.setting_welcome.path_link + '" alt="info" style="width: 100%;"></div>');
+                            }
+                        }
+
+                        if (data.lottery_market.length != 0) {
+                            $.each(data.lottery_market, function (key, value) {
+                                if (value.website != null) {
+                                    route = value.website;
+                                } else {
+                                    route = 'https://sultanlulu.xyz/mobile';
+                                }
+                                $('.lottery_market').append('<div style="margin-right: 10px; margin-top: -10px; width: 100%;">' +
+                                    '<div onclick="window.open(`' + route + '`, `_blank`)" style="background-color: #201E21; border-top: 1px solid #2F211D; border-top-left-radius: 20px; border-top-right-radius: 20px; padding: 3px 12px;">' +
+                                    (value.logo_link != null ? '<div style="color: transparent !important; -webkit-background-clip: text; background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #e99c05 0%, #f4ae00 8%, #f8bf33 25%, #f8ce19 62.5%, #ffdc02 100%); font-weight: 500; font-size: 13px; display: flex;"><img src="' + value.logo_link + '" alt="' + value.name + '" style="height: 26px; margin: auto 4px auto auto;"><div style="margin: auto auto auto 0;">' + value.name + '</div></div>' : '<div style="color: transparent !important; -webkit-background-clip: text; background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #e99c05 0%, #f4ae00 8%, #f8bf33 25%, #f8ce19 62.5%, #ffdc02 100%); font-weight: 500; font-size: 13px;">' + value.name + '</div>') +
+                                    '<div style="font-weight: 500; font-size: 12px;">' + (value.day_off_desc_implode != null ? '( ' + value.day_off_desc_implode + ' Off )' : '( Setiap Hari )') + '</div>' +
+                                    '</div>' +
+                                    '<div style="background-color: #2F211D; border-bottom: 2px solid #201E21; padding: 6px 12px; display: flex;">' +
+                                    '<div style="font-size: 12px; font-weight: 500; margin: auto 10px auto auto;">' + value.date_desc + '<div>' + value.date_desc2 + '</div></div>' +
+                                    '<div style="color: #000; font-size: 15px; margin: auto;">' +
+                                    (value.prize != 1 ? '<table style="margin: 0 0 0 auto; font-weight: 500; text-align: center;">' +
+                                        '<tr onclick="window.location=`https://' + data.domain + '/mobile/togel/pasaran-' + value.id + '`" style="cursor: pointer;">' +
+                                        '<td style="padding-right: 6px;"><div style="background: linear-gradient(#000 0 0) padding-box, linear-gradient(to left, #FEDB37, #8A6E2F) border-box; border: 1px solid transparent; color: #fff; width: 27px; line-height: 27px; border-radius: 6px; box-shadow: 1px .125rem .5rem rgba(0, 0, 0, .3);">' + value.prize_1_split[0] + '</div></td>' +
+                                        '<td style="padding-right: 6px;"><div style="background: linear-gradient(#000 0 0) padding-box, linear-gradient(to left, #FEDB37, #8A6E2F) border-box; border: 1px solid transparent; color: #fff; width: 27px; line-height: 27px; border-radius: 6px; box-shadow: 1px .125rem .5rem rgba(0, 0, 0, .3);">' + value.prize_1_split[1] + '</div></td>' +
+                                        '<td style="padding-right: 6px;"><div style="background: linear-gradient(#000 0 0) padding-box, linear-gradient(to left, #FEDB37, #8A6E2F) border-box; border: 1px solid transparent; color: #fff; width: 27px; line-height: 27px; border-radius: 6px; box-shadow: 1px .125rem .5rem rgba(0, 0, 0, .3);">' + value.prize_1_split[2] + '</div></td>' +
+                                        '<td style="padding-right: 6px;"><div style="background: linear-gradient(#000 0 0) padding-box, linear-gradient(to left, #FEDB37, #8A6E2F) border-box; border: 1px solid transparent; color: #fff; width: 27px; line-height: 27px; border-radius: 6px; box-shadow: 1px .125rem .5rem rgba(0, 0, 0, .3);">' + value.prize_1_split[3] + '</div></td>' +
+                                        '</tr>' +
+                                        '</table>' +
+                                        '<table style="margin: 10px 0 0 auto; font-weight: 500; text-align: center;">' +
+                                        '<tr onclick="window.location=`https://' + data.domain + '/mobile/togel/pasaran-' + value.id + '`" style="cursor: pointer;">' +
+                                        '<td style="padding-right: 6px;"><div style="background: linear-gradient(#000 0 0) padding-box, linear-gradient(to left, #FEDB37, #8A6E2F) border-box; border: 1px solid transparent; color: #fff; width: 27px; line-height: 27px; border-radius: 6px; box-shadow: 1px .125rem .5rem rgba(0, 0, 0, .3);">' + value.prize_2_split[0] + '</div></td>' +
+                                        '<td style="padding-right: 6px;"><div style="background: linear-gradient(#000 0 0) padding-box, linear-gradient(to left, #FEDB37, #8A6E2F) border-box; border: 1px solid transparent; color: #fff; width: 27px; line-height: 27px; border-radius: 6px; box-shadow: 1px .125rem .5rem rgba(0, 0, 0, .3);">' + value.prize_2_split[1] + '</div></td>' +
+                                        '<td style="padding-right: 6px;"><div style="background: linear-gradient(#000 0 0) padding-box, linear-gradient(to left, #FEDB37, #8A6E2F) border-box; border: 1px solid transparent; color: #fff; width: 27px; line-height: 27px; border-radius: 6px; box-shadow: 1px .125rem .5rem rgba(0, 0, 0, .3);">' + value.prize_2_split[2] + '</div></td>' +
+                                        '<td style="padding-right: 6px;"><div style="background: linear-gradient(#000 0 0) padding-box, linear-gradient(to left, #FEDB37, #8A6E2F) border-box; border: 1px solid transparent; color: #fff; width: 27px; line-height: 27px; border-radius: 6px; box-shadow: 1px .125rem .5rem rgba(0, 0, 0, .3);">' + value.prize_2_split[3] + '</div></td>' +
+                                        '</tr>' +
+                                        '</table>' +
+                                        '<table style="margin: 10px 0 0 auto; font-weight: 500; text-align: center;">' +
+                                        '<tr onclick="window.location=`https://' + data.domain + '/mobile/togel/pasaran-' + value.id + '`" style="cursor: pointer;">' +
+                                        '<td style="padding-right: 6px;"><div style="background: linear-gradient(#000 0 0) padding-box, linear-gradient(to left, #FEDB37, #8A6E2F) border-box; border: 1px solid transparent; color: #fff; width: 27px; line-height: 27px; border-radius: 6px; box-shadow: 1px .125rem .5rem rgba(0, 0, 0, .3);">' + value.prize_3_split[0] + '</div></td>' +
+                                        '<td style="padding-right: 6px;"><div style="background: linear-gradient(#000 0 0) padding-box, linear-gradient(to left, #FEDB37, #8A6E2F) border-box; border: 1px solid transparent; color: #fff; width: 27px; line-height: 27px; border-radius: 6px; box-shadow: 1px .125rem .5rem rgba(0, 0, 0, .3);">' + value.prize_3_split[2] + '</div></td>' +
+                                        '<td style="padding-right: 6px;"><div style="background: linear-gradient(#000 0 0) padding-box, linear-gradient(to left, #FEDB37, #8A6E2F) border-box; border: 1px solid transparent; color: #fff; width: 27px; line-height: 27px; border-radius: 6px; box-shadow: 1px .125rem .5rem rgba(0, 0, 0, .3);">' + value.prize_3_split[2] + '</div></td>' +
+                                        '<td style="padding-right: 6px;"><div style="background: linear-gradient(#000 0 0) padding-box, linear-gradient(to left, #FEDB37, #8A6E2F) border-box; border: 1px solid transparent; color: #fff; width: 27px; line-height: 27px; border-radius: 6px; box-shadow: 1px .125rem .5rem rgba(0, 0, 0, .3);">' + value.prize_3_split[3] + '</div></td>' +
+                                        '</tr>' +
+                                        '</table>' : '<table style="margin: 0 0 0 auto; font-weight: 500; text-align: center;">' +
+                                        '<tr onclick="window.location=`https://' + data.domain + '/mobile/togel/pasaran-' + value.id + '`" style="cursor: pointer;">' +
+                                        '<td style="padding-right: 6px;"><div style="background: linear-gradient(#000 0 0) padding-box, linear-gradient(to left, #FEDB37, #8A6E2F) border-box; border: 1px solid transparent; color: #fff; width: 27px; line-height: 27px; border-radius: 6px; box-shadow: 1px .125rem .5rem rgba(0, 0, 0, .3);">' + value.number_split[0] + '</div></td>' +
+                                        '<td style="padding-right: 6px;"><div style="background: linear-gradient(#000 0 0) padding-box, linear-gradient(to left, #FEDB37, #8A6E2F) border-box; border: 1px solid transparent; color: #fff; width: 27px; line-height: 27px; border-radius: 6px; box-shadow: 1px .125rem .5rem rgba(0, 0, 0, .3);">' + value.number_split[1] + '</div></td>' +
+                                        '<td style="padding-right: 6px;"><div style="background: linear-gradient(#000 0 0) padding-box, linear-gradient(to left, #FEDB37, #8A6E2F) border-box; border: 1px solid transparent; color: #fff; width: 27px; line-height: 27px; border-radius: 6px; box-shadow: 1px .125rem .5rem rgba(0, 0, 0, .3);">' + value.number_split[2] + '</div></td>' +
+                                        '<td style="padding-right: 6px;"><div style="background: linear-gradient(#000 0 0) padding-box, linear-gradient(to left, #FEDB37, #8A6E2F) border-box; border: 1px solid transparent; color: #fff; width: 27px; line-height: 27px; border-radius: 6px; box-shadow: 1px .125rem .5rem rgba(0, 0, 0, .3);">' + value.number_split[3] + '</div></td>' +
+                                        '</tr>' +
+                                    '</table>') +
+                                    '</div>' +
+                                    '</div>' +
+                                    '<div style="background-color: #2F211D; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; padding: 6px 12px; font-size: 11px;">' +
+                                    'Tutup: ' + value.time_off_desc + ' | Buka: ' + value.time_on_desc +
+                                    '</div>' +
+                                    '</div>');
+                            });
+                        }
+                        return true;
+                    },
+                    error: function (res) {
+                        toastr['error'](res.error);
+                    }
+                });
+            });
+        </script>
+    </div>
+
+    <script>
+        let isSubscribed = false;
+
+        // OneSignal initialization
+        window.OneSignalDeferred = window.OneSignalDeferred || [];
+        OneSignalDeferred.push(async function (OneSignal) {
+            try {
+                await OneSignal.init({
+                    appId: "a76bb7ba-91a1-4c7f-b3dc-681051f9abd1", // Cloudflare Page
+                    notifyButton: {
+                        enable: false
+                    },
+                    allowLocalhostAsSecureOrigin: true,
+                    serviceWorkerPath: "./OneSignalSDKWorker.js",
+                    serviceWorkerUpdaterPath: "./OneSignalSDKUpdaterWorker.js",
+                    welcomeNotification: {
+                        title: "Selamat Datang!",
+                        message: "Terima kasih telah mengaktifkan notifikasi"
+                    }
+                });
+
+                console.log('OneSignal berhasil diinisialisasi');
+
+                const isPushSupported = await OneSignal.Notifications.isPushSupported();
+                if (isPushSupported) {
+                    isSubscribed = await OneSignal.User.PushSubscription.optedIn;
+                    updateNotificationStatus();
+                }
+
+                OneSignal.User.PushSubscription.addEventListener('change', function (event) {
+                    isSubscribed = event.current.optedIn;
+                    updateNotificationStatus();
+                });
+
+            } catch (error) {
+                console.error('Error initializing OneSignal:', error);
+            }
+        });
+
+        async function subscribeToOneSignal() {
+            try {
+                if (window.OneSignal) {
+                    const permission = await OneSignal.Notifications.requestPermission();
+                    if (permission) {
+                        console.log('Notifikasi berhasil diaktifkan');
+
+                        const playerId = await OneSignal.User.PushSubscription.id;
+                        if (playerId) {
+                            console.log(`Player ID: ${playerId}`);
+                        }
+                    } else {
+                        console.log('Pengguna menolak izin notifikasi');
+                    }
+                } else {
+                    console.log('OneSignal belum siap');
+                }
+            } catch (error) {
+                console.error('Error subscribing:', error);
+            }
+        }
+
+        async function requestNotificationPermission() {
+            try {
+                if (!('Notification' in window)) {
+                    alert('Browser ini tidak mendukung notifikasi!');
+                    return;
+                }
+
+                console.log('Meminta izin notifikasi browser...');
+
+                const permission = await Notification.requestPermission();
+
+                if (permission === 'granted') {
+                    console.log('Izin notifikasi browser berhasil diberikan');
+                    updateBrowserNotificationStatus();
+
+                    // Send test notification
+                    try {
+                        if ('serviceWorker' in navigator && navigator.serviceWorker.ready) {
+                            const registration = await navigator.serviceWorker.ready;
+                            await registration.showNotification('Notifikasi Aktif!', {
+                                body: 'Notifikasi browser sudah aktif. Sekarang Anda bisa menerima notifikasi.',
+                                icon: './icon-192.png',
+                                tag: 'permission-granted',
+                                data: { action: 'permission-test' }
+                            });
+                        } else {
+                            const testNotif = new Notification('Notifikasi Aktif!', {
+                                body: 'Notifikasi browser sudah aktif. Sekarang Anda bisa menerima notifikasi.',
+                                icon: './icon-192.png',
+                                tag: 'permission-granted'
+                            });
+                            setTimeout(() => testNotif.close(), 4000);
+                        }
+                    } catch (notifError) {
+                        console.warn('Test notification failed:', notifError);
+                    }
+
+                } else if (permission === 'denied') {
+                    console.log('Izin notifikasi ditolak oleh pengguna');
+                    alert('Notifikasi ditolak! Untuk mengaktifkan notifikasi:\n\n1. Klik ikon gembok/info di address bar\n2. Ubah setting notifikasi ke "Allow"\n3. Refresh halaman');
+                } else {
+                    console.log('Izin notifikasi diabaikan oleh pengguna');
+                }
+
+                updateBrowserNotificationStatus();
+
+            } catch (error) {
+                console.error('Error requesting permission:', error);
+            }
+        }
+
+        function updateBrowserNotificationStatus() {
+            const permission = Notification.permission;
+            const requestBtn = document.getElementById('requestPermissionBtn');
+
+            requestBtn.classList.remove('success1', 'error1', 'warning1');
+
+            if (permission === 'granted') {
+                requestBtn.classList.add('success1');
+                requestBtn.textContent = 'Notifikasi Aktif';
+                requestBtn.disabled = true;
+            } else if (permission === 'denied') {
+                requestBtn.classList.add('error1');
+                requestBtn.textContent = 'Notifikasi diblokir!';
+            } else {
+                requestBtn.classList.add('warning1');
+                requestBtn.textContent = 'Izinkan Notifikasi';
+            }
+        }
+
+        function updateNotificationStatus() {
+            const subscribeBtn = document.getElementById('subscribeBtn');
+
+            subscribeBtn.classList.remove('success1', 'error1', 'warning1');
+
+            if (isSubscribed) {
+                subscribeBtn.classList.add('success1');
+                subscribeBtn.textContent = 'Akun VIP Aktif ✓';
+                subscribeBtn.disabled = true;
+            } else {
+                subscribeBtn.classList.add('warning1');
+                subscribeBtn.textContent = 'Aktifkan Akun VIP';
+                subscribeBtn.disabled = false;
+            }
+        }
+
+        // Service Worker registration
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./service-worker.js')
+                .then(registration => {
+                    console.log('Service Worker registered:', registration);
+                })
+                .catch(error => {
+                    console.error('Service Worker registration failed:', error);
+                });
+
+            navigator.serviceWorker.register('./OneSignalSDKWorker.js')
+                .then(registration => {
+                    console.log('OneSignal SW registered:', registration);
+                })
+                .catch(error => {
+                    console.error('OneSignal SW registration failed:', error);
+                });
+        } else {
+            console.log('Browser tidak mendukung Service Worker');
+        }
+
+        // Initialize status on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            updateBrowserNotificationStatus();
+            updateNotificationStatus();
+        });
+    </script>
+
+
+</body>
+
+</html>
