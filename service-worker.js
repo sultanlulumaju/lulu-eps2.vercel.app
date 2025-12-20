@@ -1,4 +1,4 @@
-const CACHE_NAME = 'apklulu-cache-v1.0.3'; // ganti versi setiap update
+const CACHE_NAME = 'apklulu-cache-v1.0.5'; // ganti versi setiap update
 const STATIC_ASSETS = [
   './',
   './index.html',
